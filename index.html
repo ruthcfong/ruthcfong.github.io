@@ -164,12 +164,26 @@
           <strong>Ruth Fong</strong> and <a href="http://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
       <br>
         <em>CVPR</em>, 2018 <font color="orange"><strong>(Spotlight)</strong></font><br>
-        <a href="https://arxiv.org/abs/1801.03454">arxiv</a> /
-        <a href="http://ruthcfong.github.io/files/net2vec_supps.pdf">supp</a> /
-        <a href="bib/FongVedaldiCVPR2018.bib">bibtex</a> / 
-        <a href="https://github.com/ruthcfong/net2vec">code</a> /
-        <a href="https://www.youtube.com/watch?v=mDVD13M2X94&feature=youtu.be&t=4592">talk</a> /
+        <a href="https://arxiv.org/abs/1801.03454">arxiv</a> |
+        <a href="http://ruthcfong.github.io/files/net2vec_supps.pdf">supp</a> |
+        <a href="bib/FongVedaldiCVPR2018.bib" target="_blank">bibtex</a> |
+        <!--<a onclick="toggle_bib('cvpr18_bib')">bibtex</a> /-->
+        <a href="https://github.com/ruthcfong/net2vec">code</a> |
+        <a href="https://www.youtube.com/watch?v=mDVD13M2X94&feature=youtu.be&t=4592">talk</a> |
         <a href="files/fong_cvpr18_net2vec_spotlight_slides.pdf">slides</a>
+        <div style="display: none;" id="cvpr18_bib">
+          <pre>
+@InProceedings{fong_cvpr_2018,
+  author={Fong, Ruth and Vedaldi, Andrea},
+  title={Net2Vec: Quantifying and Explaining how Concepts 
+  are Encoded by Filters in Deep Neural Networks},
+  booktitle={The IEEE Conference on Computer Vision 
+  and Pattern Recognition (CVPR)},
+  month={July},
+  year={2018}
+}
+          </pre>
+        </div>
         <p></p>
         <p>Investigating how human-interpretable visual concepts (i.e., textures, objects, etc.) are encoded across hidden units of a convolutional neural network (CNN) layer as well as across CNN layers.</p>
       </td>
@@ -201,9 +215,9 @@
           <strong>Ruth Fong</strong> and <a href="http://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
         <br>
         <em>ICCV</em>, 2017 <br>
-        <a href="https://arxiv.org/abs/1704.03296">arxiv</a> / 
-        <a href="http://openaccess.thecvf.com/content_ICCV_2017/supplemental/Fong_Interpretable_Explanations_of_ICCV_2017_supplemental.pdf">supp</a> /
-        <a href="bib/FongVedaldiICCV2017.bib">bibtex</a> / 
+        <a href="https://arxiv.org/abs/1704.03296">arxiv</a> |
+        <a href="http://openaccess.thecvf.com/content_ICCV_2017/supplemental/Fong_Interpretable_Explanations_of_ICCV_2017_supplemental.pdf">supp</a> |
+        <a href="bib/FongVedaldiICCV2017.bib" target="_blank">bibtex</a> |
         <a href="https://github.com/ruthcfong/perturb_explanations">code</a>
         <p></p>
         <p>We developed a theoretical framework for learning "explanations" of black box functions like CNNs as well as saliency methods for identifying "where" a computer vision algorithm is looking.</p>
@@ -233,10 +247,10 @@
           <strong>Ruth Fong</strong>, <a href="https://www.wjscheirer.com/">Walter Scheirer</a>, and <a href="http://coxlab.org/">David Cox</a>
         <br>
         <em>Scientific Reports</em>, 2018<br>
-        <a href="https://arxiv.org/abs/1703.05463">arxiv</a> / 
-        <a href="https://arxiv.org/src/1703.05463v2/anc/fong-et-al-supplementary.pdf">supp</a> / 
-        <a href="https://dash.harvard.edu/handle/1/14398538">Harvard thesis</a> / 
-        <a href="bib/FongScheirerCox2018.bib">bibtex</a> / 
+        <a href="https://arxiv.org/abs/1703.05463">arxiv</a> |
+        <a href="https://arxiv.org/src/1703.05463v2/anc/fong-et-al-supplementary.pdf">supp</a> |
+        <a href="https://dash.harvard.edu/handle/1/14398538">Harvard thesis</a> |
+        <a href="bib/FongScheirerCox2018.bib" target="_blank">bibtex</a> |
         code (coming soon)
         <p></p>
         <p>We introduce a biologically-informed machine learning paradigm for object classification that biases models to better match the learned, internal representations of the visual cortex.</p>
@@ -298,7 +312,9 @@
           <strong>Ruth Fong</strong> (advised by <a href="https://www.ndcn.ox.ac.uk/team/rafal-bogacz">Rafal Bogacz</a>)
         <br>
         <em>M.Sc. Dissertation #1</em><br>
-        <a href="http://ruthcfong.github.io/kuramoto/tutorial.html">Tutorial</a> / <a href="https://data.mrc.ox.ac.uk/data-set/kuramoto">Demo </a> / <a href="http://uk.mathworks.com/matlabcentral/fileexchange/56485-family-of-rayleigh-statistics-toolbox">MATLAB Rayleigh statistics toolbox</a>
+        <a href="http://ruthcfong.github.io/kuramoto/tutorial.html">Tutorial</a> | 
+        <a href="https://data.mrc.ox.ac.uk/data-set/kuramoto">Demo </a> |
+        <a href="http://uk.mathworks.com/matlabcentral/fileexchange/56485-family-of-rayleigh-statistics-toolbox">MATLAB Rayleigh statistics toolbox</a>
           <!--<a href="http://ruthcfong.github.io/kuramoto/">Demo</a>-->
         <p></p>
         <p>I developed a computational oscillator model that modeled the tremor-dampening effects of phasic deep brain stimulation and analyzed it on experimental data.</p>
@@ -450,6 +466,26 @@
           var pageTracker = _gat._getTracker("UA-7580334-1");
           pageTracker._trackPageview();
           } catch(err) {}
+
+      function toggle_bib(bib_id) {
+        if (document.getElementById(bib_id).style.display=='none')
+          document.getElementById(bib_id).style.display='block';
+        else
+          document.getElementById(bib_id).style.display='none';
+      }
+      /*
+      var txtFile = new XMLHttpRequest();
+      txtFile.open("GET", "bib/FongVedaldiCVPR2018.txt", true);
+      // allText = txtFile.responseText;
+      txtFile.onreadystatechange = function() {
+        if (txtFile.readyState === 4 && txtFile.status == 200) {
+           // allText = txtFile.responseText;
+           alert(txtFile.responseText);
+           document.getElementById('cvpr18_bib').innerHTML = txtFile.responseText;
+        }
+      }
+      */
+      // document.getElementById('cvpr18_bib').innerHTML = allText;
       </script>
     </td>
     </tr>
