@@ -120,7 +120,7 @@
         <td>
           <heading>News</heading>
             <ul>
-              <li>Starting in 2019, I am working part-time at Pro Unlimited for Facebook AI Research (FAIR) London.</li>
+              <li>In summer 2019, I worked part-time as a contractor with Pro Unlimited for Facebook AI Research (FAIR) London.</li>
               <li>In 2018, I was awarded an <a href="https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/announcing-2018-ai-fellows">Open Philanthropy AI Fellowship</a>. I explain some of my research aspirations in <a href="http://www.eng.ox.ac.uk/about/news/engineering-science-students-selected-as-ai-fellows">this departmental announcement</a>.
               <li>In summer 2018, I interned at <a href="https://research.google.com/">Google Research</a> in Zurich and worked with Vitto Ferrari's LOCO team.
               <li>At ICCV 2017, I gave a contributing talk at the <a href="https://sites.google.com/site/mbcc2017w/home">Mutual Benefits of Cognitive and Computer Vision</a> workshop (<a href="files/fong_iccv17_mbcc_talk_using_human_brain_activity.pdf">slides</a>).</li>
@@ -178,6 +178,46 @@ year = {2019}
         </div>
         <p></p>
         <p>We introduce extremal perturbations, an novel attribution method that highlights "where" a model is "looking." We improve upon Fong and Vedaldi, 2017 by separating out regularization on the size and smoothness of a perturbation mask from the attribution objective of learning a mask that maximally affects a model's output; we also extend our work to intermediate channel representations.</p>
+      </td>
+    </tr>
+    <tr onmouseout="wolves_stop()" onmouseover="wolves_start()">
+      <td width="25%">
+        <div class="one">
+        <div class="two" id="wolves_image"><img src="media/wolves_2.png" width="160" height="160" alt="wolves"></div>
+        <img src="media/wolves_1.png" width="160" height="160" alt="wolves">
+        </div>
+        <script type="text/javascript">
+        function wolves_start() {
+        document.getElementById('wolves_image').style.opacity = "1";
+        }
+        function wolves_stop() {
+        document.getElementById('wolves_image').style.opacity = "0";
+        }
+        tripod_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+            <!--<a href="TODO">-->
+              <papertitle>Occlusions for Effective Data Augmentation in Image Classification</papertitle>
+            <!--</a>-->
+      <br>
+          <strong>Ruth Fong</strong> and <a href="http://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
+      <br>
+        <em>ICCV Workshop on Interpreting and Explaining Visual Artificial Intelligence Models</em>, 2019<br>
+        <!--<a href="bib/FongVedaldiICCVWorkshop2019.bib" target="_blank">bibtex</a> | -->
+        paper & code (coming soon)
+        <div style="display: none;" id="iccvworkshop19_bib">
+          <pre>
+@InProceedings{fong_iccv_workshop_2019,
+author = {Fong, Ruth and and Vedaldi, Andrea},
+title = {Occlusions for Effective Data Augmentation in Image Classification},
+booktitle = {ICCV Workshop on Interpreting and Explaining Visual Artificial Intelligence Models},
+year = {2019}
+}
+          </pre>
+        </div>
+        <p></p>
+        <p>We introduce a simple paradigm based on batch augmentation for leveraging input-level occlusions (both stochastic and saliency-based) to improve ImageNet image classification. We also demonstrate the necessary of batch augmentation and quantify the robustness of different CNN architectures to occlusion via ablation studies.</p>
       </td>
     </tr>
     <tr onmouseout="filters_stop()" onmouseover="filters_start()" bgcolor="#ffffd0">
@@ -258,7 +298,9 @@ year = {2019}
         <a href="https://arxiv.org/abs/1704.03296">arxiv</a> |
         <a href="http://openaccess.thecvf.com/content_ICCV_2017/supplemental/Fong_Interpretable_Explanations_of_ICCV_2017_supplemental.pdf">supp</a> |
         <a href="bib/FongVedaldiICCV2017.bib" target="_blank">bibtex</a> |
-        <a href="https://github.com/ruthcfong/perturb_explanations">code</a>
+        <a href="https://github.com/ruthcfong/perturb_explanations">code</a> |
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-28954-6_8">book chapter (extended)</a> |
+        <a href="bib/FongVedaldiSpringer2019.bib" target="_blank">chapter bibtex</a>
         <p></p>
         <p>We developed a theoretical framework for learning "explanations" of black box functions like CNNs as well as saliency methods for identifying "where" a computer vision algorithm is looking.</p>
       </td>
@@ -491,7 +533,7 @@ year = {2019}
           <font size="2">
           <a href="https://jonbarron.info/">This ubiquitous CS researcher website template spawned from here.</a>
           <br>
-          Last updated: May 2019
+          Last updated: September 2019
         </font>
         </p>
         </td>
