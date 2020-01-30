@@ -127,6 +127,25 @@ d-figure > figure {
     <div id="chain_layers"></div>
     <figcaption><b>Different Layers.</b></figcaption>
   </figure>
+  <h2 id="class_similarities">Similarities Across Images</h2>
+    <figure>
+    <!-- Select 10 images to compute components over (default 4; reduced to 3 if 4 seemed too many); showing 5 + perceptual engine -->
+    <!-- Too few/many images that are too visually varied -- hard to get clear components -->
+    <!-- Blow dryer: 4 components; black strokes correspond to cord (purple component); nozzle part vs. handle -->
+    <div id="blow_dryer_images"></div>
+    <div id="blow_dryer_components"></div>
+    <!-- Cello: 4 components; perceptual engine doesn't correspond to all components (i.e., what I thought would be the "human" corresponds to cello) -->
+    <!-- Human = component; body vs. neck/strings as component-->
+    <div id="cello_images"></div>
+    <div id="cello_components"></div>
+    <!-- iron: 4 components; the stone age one; the handle sems to correspond to check mark black stroke in perceptual engine -->
+    <!-- bottom, middle, handle components + background-->
+    <div id="iron_images"></div>
+    <div id="iron_components"></div>
+
+    <figcaption><b>Perceptual engines.</b></figcaption>
+  </figure>
+
   <h2 id="transformations">Sensitivity to Geometric Transformations</h2>
   <h2 id="similarity-metrics">Visualizing Similarity Metrics</h2>
 
