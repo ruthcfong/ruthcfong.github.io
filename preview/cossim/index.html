@@ -45,6 +45,29 @@ d-figure > figure {
   top: 26px;
   left: -48px;
 }
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+/*.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}*/
 </style>
 </head>
 
@@ -117,6 +140,9 @@ d-figure > figure {
   <p>In this work, we introduce <b>similarity overlays</b> &mdash; an interactive visualization technique that highlights how a network "sees" different image patches as similar or different.</p>
   <p>We can also cite <d-cite key="gregor2015draw"></d-cite> external publications<d-cite key="lenc2015understanding"></d-cite>.</p>
   
+  <h2 id="similarity-metrics">Visualizing Similarity Metrics</h2>
+  <!--TODO(ruthfong): Add figures -->
+
   <h2 id="layers">Exploring Different Layers' Representations</h2>
   <figure>
     <div id="dog_cat_layers"></div>
@@ -127,7 +153,21 @@ d-figure > figure {
     <div id="chain_layers"></div>
     <figcaption><b>Different Layers.</b></figcaption>
   </figure>
+  <figure>
+    <div id="dog_cat_mixed4_layers"></div>
+    <div id="flowers_mixed4_layers"></div>
+    <div id="bowtie_guy_mixed4_layers"></div>
+    <div id="pig_mixed4_layers"></div>
+    <div id="beer_mixed4_layers"></div>
+    <div id="chain_mixed4_layers"></div>
+    <figcaption><b>Mixed4 Layers.</b></figcaption>
+  </figure>
+
   <h2 id="class_similarities">Similarities Across Images</h2>
+    <p>Perceptual engines
+      <d-footnote>Blog post<d-cite key="white2018"></d-cite>; <a href="https://dribnet.bigcartel.com/category/perception-engines">store</a></d-footnote>
+    </p>
+
     <figure>
     <!-- Select 10 images to compute components over (default 4; reduced to 3 if 4 seemed too many); showing 5 + perceptual engine -->
     <!-- Too few/many images that are too visually varied -- hard to get clear components -->
@@ -142,18 +182,86 @@ d-figure > figure {
     <!-- bottom, middle, handle components + background-->
     <div id="iron_images"></div>
     <div id="iron_components"></div>
+    <!-- hammerhead: 4 components; top-to-bottom spatial awareness; also inside-outside extremeties -->
+    <div id="hammerhead_images"></div>
+    <div id="hammerhead_components"></div>
+    <!-- binoculars: 4 components; different components correspond to three different orientations -->
+    <!-- cross marks in perceptual image corresponds to cords possibly -->
+    <div id="binoculars_images"></div>
+    <div id="binoculars_components"></div>
+    <!-- cabbage: 3 components; correspond to center and extremity -->
+    <div id="cabbage_images"></div>
+    <div id="cabbage_components"></div>
+    <!-- jackolantern: 3 components; correspond to center and extremity (4 components didn't make as much sense) -->
+    <!-- spatial awareness top-down (but not side to side for symmetric objects) -->
+    <!-- top of the pumpkin corresponds to stem? -->
+    <div id="jackolantern_images"></div>
+    <div id="jackolantern_components"></div>
+    <!-- measuring_cup: 4 components; Spatial awareness top-down also shown in components
+      Other reference illustration (last image) fairly good as a reference -->
+    <div id="measuring_cup_images"></div>
+    <div id="measuring_cup_components"></div>
+    <!-- starfish: 3 components; inside and outside
+      crosses might correspond to extremeties (see bottom right cross) -->
+    <div id="starfish_images"></div>
+    <div id="starfish_components"></div>
+    <!-- tick: 4 components; Body / head / legs
+      Black marks seems to correspond to legs / extremities-->
+    <div id="tick_images"></div>
+    <div id="tick_components"></div>
 
     <figcaption><b>Perceptual engines.</b></figcaption>
   </figure>
 
+  <!--TODO(ruthfong): Add Picker -->
+  <!--<div id="StickyPicker" style="grid-column: screen;"></div>-->
+  <!--<button class="collapsible">Mixed4a Layers</button>
+  <div class="content">
+    <figure>
+      <div id="dog_cat_mixed4_layers"></div>
+      <div id="flowers_mixed4_layers"></div>
+      <div id="bowtie_guy_mixed4_layers"></div>
+      <div id="pig_mixed4_layers"></div>
+      <div id="beer_mixed4_layers"></div>
+      <div id="chain_mixed4_layers"></div>
+      <figcaption><b>mixed4 layers</b></figcaption>
+    </figure>
+  </div> 
+  <button class="collapsible">Different Layers</button>
+  <div class="content"> 
+    <figure>
+      <div id="dog_cat_layers"></div>
+      <div id="flowers_layers"></div>
+      <div id="bowtie_guy_layers"></div>
+      <div id="pig_layers"></div>
+      <div id="beer_layers"></div>
+      <div id="chain_layers"></div>
+      <figcaption><b>Different Layers.</b></figcaption>
+    </figure>
+  </div>-->
+
   <h2 id="transformations">Sensitivity to Geometric Transformations</h2>
-  <h2 id="similarity-metrics">Visualizing Similarity Metrics</h2>
 
   <p>
     Typically, we parameterize the input image as the RGB values of each pixel.
     But that isn’t the only way to parameterize images.
     And, as long as the mapping from parameters to images is differentiable, we can still optimize alternative parameterizations with gradient descent.
   </p>
+  <figure>
+    <div id="rotate_dog_cat_images"></div>
+    <div id="rotate_flowers_images"></div>
+    <div id="rotate_pig_images"></div>
+    <div id="rotate_bowtie_guy_images"></div>
+    <div id="rotate_beer_images"></div>
+    <div id="rotate_chain_images"></div>
+    <figcaption><b>Rotation.</b></figcaption>
+  </figure>
+
+  <figure>
+    <div id="scale_dog_images"></div>
+    <div id="scale_cat_images"></div>
+    <figcaption><b>Scale.</b></figcaption>
+  </figure>
 
   <figure class="subgrid">
     <figcaption style="grid-column: kicker">
