@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://distill.pub/template.v2.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha256-nZaxPHA2uAaquixjSDX19TmIlbRNCOrf5HO1oHl5p70=" crossorigin="anonymous"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
   <style>.subgrid {
   grid-column: screen; 
   display: grid; 
@@ -92,17 +95,17 @@ d-figure > figure {
       "affiliationURL": "https://www.ox.ac.uk"
     },
     {
+      "author": "Alexander Mordvintsev",
+      "authorURL": "https://znah.net/",
+      "affiliation": "Google AI",
+      "affiliationURL": "https://research.google.com/"
+    },
+    {
       "author": "Chris Olah",
       "authorURL": "https://colah.github.io/",
       "affiliation": "Open AI",
       "affiliationURL": "https://openai.com"
     },
-    {
-      "author": "Alexander Mordvintsev",
-      "authorURL": "https://znah.net/",
-      "affiliation": "Google AI",
-      "affiliationURL": "https://research.google.com/"
-    }
   ],
   "katex": {
     "delimiters": [
@@ -121,12 +124,12 @@ d-figure > figure {
   }</script>
 </d-front-matter>
 
-<d-title>
+<d-title style="contain: style; overflow: visible;">
   <h1>Interactive Similarity Overlays</h1>
   <p>An interactive tool for understanding what neural networks consider similar and different.</p>
-  <figure class="l-page" id="splash-figure">
-      <div id="multi"></div>
-      <figcaption>
+  <figure class="base-grid" id="splash-figure">
+      <div id="multi" style="grid-column: screen; margin: 0 auto;"></div>
+      <figcaption style="grid-column: text;">
         <b>Hover over different parts of the above images</b>. This interactive visualization shows how similar (or different) a neural network considers different image patches to the current image patch (highlighted in yellow).
       </figcaption>
   </figure>
@@ -144,6 +147,40 @@ d-figure > figure {
   <!--TODO(ruthfong): Add figures -->
 
   <h2 id="layers">Exploring Different Layers' Representations</h2>
+  <!--<figure style="grid-column: screen;" class="shaded-figure">
+    <d-figure class="base-grid" id="todo_dfigure"></d-figure>
+    <div class="base-grid" style="margin-top: 4px;" >
+      <div style="grid-column: text / text;" id="colab-negative"></div>
+    </div>
+  </figure>-->
+
+  <!--<input type="number" bind:value={pos[0]}>
+	<input type="number" bind:value={pos[1]}>
+  <Chart {pos} size=224 datasource="chart_data.csv" {ylabels} N=2/>-->
+  <!--<figure>
+    <div id='line-chart'></div>
+  </figure>-->
+
+
+  <figure class="base-grid shaded-figure">
+    <figcaption style="grid-column: kicker;">
+      <div id="colab-different_layers"></div>
+    </figcaption>
+    <d-figure style="grid-column: text-start / page-end;" id="different_layers">
+      <figcaption><b>Different Layers.</b></figcaption>
+    </d-figure>
+  </figure>
+
+  <figure class="base-grid shaded-figure">
+    <figcaption style="grid-column: kicker;">
+      <div id="colab-mixed4"></div>
+    </figcaption>
+    <d-figure style="grid-column: text-start / page-end;" id="mixed4">
+      <figcaption><b>Mixed4 Layers.</b></figcaption>
+    </d-figure>
+  </figure>
+
+  <!--
   <figure>
     <div id="dog_cat_layers"></div>
     <div id="flowers_layers"></div>
@@ -162,6 +199,7 @@ d-figure > figure {
     <div id="chain_mixed4_layers"></div>
     <figcaption><b>Mixed4 Layers.</b></figcaption>
   </figure>
+-->
 
   <h2 id="class_similarities">Similarities Across Images</h2>
     <p>Perceptual engines
@@ -242,11 +280,25 @@ d-figure > figure {
 
   <h2 id="transformations">Sensitivity to Geometric Transformations</h2>
 
-  <p>
-    Typically, we parameterize the input image as the RGB values of each pixel.
-    But that isn’t the only way to parameterize images.
-    And, as long as the mapping from parameters to images is differentiable, we can still optimize alternative parameterizations with gradient descent.
-  </p>
+  <figure class="base-grid shaded-figure">
+    <figcaption style="grid-column: kicker;">
+      <div id="colab-rotate"></div>
+    </figcaption>
+    <d-figure style="grid-column: text-start / page-end;" id="rotate">
+      <figcaption><b>Rotate.</b></figcaption>
+    </d-figure>
+  </figure>
+
+  <figure class="base-grid shaded-figure">
+    <figcaption style="grid-column: kicker;">
+      <div id="colab-scale"></div>
+    </figcaption>
+    <d-figure style="grid-column: text-start / page-end;" id="scale">
+      <figcaption><b>Scale.</b></figcaption>
+    </d-figure>
+  </figure>
+
+  <!--
   <figure>
     <div id="rotate_dog_cat_images"></div>
     <div id="rotate_flowers_images"></div>
@@ -256,12 +308,20 @@ d-figure > figure {
     <div id="rotate_chain_images"></div>
     <figcaption><b>Rotation.</b></figcaption>
   </figure>
+  -->
+  <p>
+    Typically, we parameterize the input image as the RGB values of each pixel.
+    But that isn’t the only way to parameterize images.
+    And, as long as the mapping from parameters to images is differentiable, we can still optimize alternative parameterizations with gradient descent.
+  </p>
 
+  <!--
   <figure>
     <div id="scale_dog_images"></div>
     <div id="scale_cat_images"></div>
     <figcaption><b>Scale.</b></figcaption>
   </figure>
+  -->
 
   <figure class="subgrid">
     <figcaption style="grid-column: kicker">
