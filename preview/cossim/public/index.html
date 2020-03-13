@@ -78,6 +78,50 @@ d-figure > figure {
 
 <d-front-matter>
   <script type="text/json">{
+    "title": "The Building Blocks of Interpretability",
+    "description": "Interpretability techniques are normally studied in isolation. We explore the powerful interfaces that arise when you combine them -- and the rich structure of this combinatorial space.",
+    "password": "cossim",
+    "authors": [
+      {
+        "author": "Ruth Fong",
+        "authorURL": "https://www.ruthfong.com/",
+        "affiliation": "University of Oxford",
+        "affiliationURL": "https://www.ox.ac.uk"
+      },
+      {
+        "author": "Alexander Mordvintsev",
+        "authorURL": "https://znah.net/",
+        "affiliation": "Google Research",
+        "affiliationURL": "https://research.google.com/"
+      },
+      {
+        "author": "Andrea Vedaldi",
+        "authorURL": "http://www.robots.ox.ac.uk/~vedaldi/",
+        "affiliation": "University of Oxford",
+        "affiliationURL": "https://www.ox.ac.uk"
+      },
+      {
+        "author": "Chris Olah",
+        "authorURL": "https://colah.github.io/",
+        "affiliation": "Google Brain",
+        "affiliationURL": "https://g.co/brain"
+      }
+    ]
+    }</script>
+  <!--<script type="text/json">{
+  "title": "Interactive Similarity Overlays",
+  "description": "An interactive tool for understanding what neural networks consider similar and different.",
+  "password": "cossim",
+  "authors": [
+    {
+      "author": "Ruth Fong",
+      "authorURL": "https://www.ruthfong.com/",
+      "affiliation": "University of Oxford",
+      "affiliationURL": "https://www.ox.ac.uk"
+    },
+  ],
+  }</script>-->
+  <!--<script type="text/json">{
   "title": "Interactive Similarity Overlays",
   "description": "An interactive tool for understanding what neural networks consider similar and different.",
   "password": "cossim",
@@ -121,7 +165,8 @@ d-figure > figure {
       }
     ]
   }
-  }</script>
+  }
+</script>-->
 </d-front-matter>
 
 <d-title style="contain: style; overflow: visible;">
@@ -139,11 +184,19 @@ d-figure > figure {
 <d-byline></d-byline>
 
 <d-article>
-  <p>As digital technology has evolved over the past few decades, the ways we interact with it has also evolved. We have moved from typing on a keyboard and viewing a terminal console, to moving and clicking a mouse and observing a graphical user interface, to employing a variety of gestures on touchscreens and voice commands. However, despite the rapid progress in deep learning over the past few years<d-cite key="krizhevsky2012"></d-cite>, the modes of interacting with research outputs have remained largely unchanged: the primary visualization tools used in research are static plots, images, and videos.</p>
-  <p>In this work, we introduce <b>similarity overlays</b> &mdash; an interactive visualization technique that highlights how a network "sees" different image patches as similar or different.</p>
-  <p>We can also cite <d-cite key="gregor2015draw"></d-cite> external publications<d-cite key="lenc2015understanding"></d-cite>.</p>
+  <p>As digital technology has evolved over the past few decades, the ways we interact with it has also evolved.
+    We have moved from typing on a keyboard and viewing a terminal console, to moving and clicking a mouse and observing a graphical user interface, to employing a variety of gestures on touchscreens and voice commands.
+    However, despite the rapid progress in deep learning over the past few years<d-cite key="krizhevsky2012"></d-cite>, the modes of interacting with research outputs have remained largely unchanged: the primary visualization tools used in research are static plots, images, and videos.</p>
+  <p>In this work, we formalize <b>similarity overlays</b> &mdash; an interactive visualization technique that highlights how a network "sees" different image patches as similar or different.</p>
+  <!--<p>We can also cite <d-cite key="gregor2015draw"></d-cite> external publications<d-cite key="lenc2015understanding"></d-cite>.</p>-->
+
+  <!-- 
+    Related works:
+    * TensorFlow
+    * Summit Visualization
+  -->
   
-  <h2 id="similarity-metrics">Visualizing Similarity Metrics</h2>
+  <!--<h2 id="similarity-metrics">Visualizing Similarity Metrics</h2>-->
   <!--TODO(ruthfong): Add figures -->
 
   <h2 id="layers">Exploring Different Layers' Representations</h2>
@@ -205,7 +258,17 @@ d-figure > figure {
     <p>Perceptual engines
       <d-footnote>Blog post<d-cite key="white2018"></d-cite>; <a href="https://dribnet.bigcartel.com/category/perception-engines">store</a></d-footnote>
     </p>
+    <p>Non-negative matrix factorization.</p>
+    <p>Combining multiple layers of abstraction<d-cite key="victor2011"></d-cite>.</p>
 
+    <figure class="base-grid shaded-figure">
+      <figcaption style="grid-column: kicker;">
+        <div id="colab-perceptual"></div>
+      </figcaption>
+      <d-figure style="grid-column: text-start / page-end;" id="perceptual">
+        <figcaption><b>Perceptual Engines.</b></figcaption>
+      </d-figure>
+    </figure>
     <figure>
     <!-- Select 10 images to compute components over (default 4; reduced to 3 if 4 seemed too many); showing 5 + perceptual engine -->
     <!-- Too few/many images that are too visually varied -- hard to get clear components -->
@@ -309,11 +372,11 @@ d-figure > figure {
     <figcaption><b>Rotation.</b></figcaption>
   </figure>
   -->
-  <p>
+  <!--<p>
     Typically, we parameterize the input image as the RGB values of each pixel.
     But that isn’t the only way to parameterize images.
     And, as long as the mapping from parameters to images is differentiable, we can still optimize alternative parameterizations with gradient descent.
-  </p>
+  </p>-->
 
   <!--
   <figure>
@@ -323,9 +386,10 @@ d-figure > figure {
   </figure>
   -->
 
+  <!--
   <figure class="subgrid">
     <figcaption style="grid-column: kicker">
-      <!-- <span class="figure-number">Figure 1:</span> -->
+      <span class="figure-number">Figure 1:</span>
       <span style="hyphens: manual;">As long as an </span>
       <span style="background-color: #FFF1E7; padding-left: 2px; padding-right: 2px;">image para&shy;meter&shy;ization</span>
       <span>is differ&shy;entiable, we can back&shy;propagate</span>
@@ -342,6 +406,7 @@ d-figure > figure {
     <d-footnote>Test! Let's cite<d-cite key="gatys2015"></d-cite> someone!</d-footnote>
     More text!
   </p> 
+-->
 
 </d-article>
 
@@ -354,18 +419,24 @@ d-figure > figure {
   </p>
 
   <p>
-    Lastly, this work was made possible by many open source tools, for which we are grateful. In particular, all of our experiments were based on <a href="https://www.tensorflow.org/">Tensorflow</a><d-cite key="abadi2016tensorflow"></d-cite> and <a href="https://github.com/tensorflow/lucid/">Lucid</a>. Most of our interactive diagrams are built in <a href="https://svelte.technology/">Svelte</a>.
+    Lastly, this work was made possible by many open source tools, for which we are grateful.
+    In particular, all of our experiments were based on <a href="https://www.tensorflow.org/">Tensorflow</a><d-cite key="abadi2016tensorflow"></d-cite>, <a href="https://pytorch.org/">PyTorch</a><d-cite key="paszke2017automatic"></d-cite>, and <a href="https://github.com/tensorflow/lucid/">Lucid</a>.
+    We built our interactive visualizations using <a href="https://svelte.technology/">Svelte</a> and <a href="https://www.chartjs.org/">Chart.js</a>.
+    We make our results reproducible using <a href="https://colab.research.google.com/">Colab</a> notebooks.
   </p>
 
   <h3>Author Contributions</h3>
   <p>
-    <b>Research:</b> Alex came up with the initial idea of cosine similarity overlays. Ruth developed its applications to interrogate different layers, geometric tranformations, and other similarity metrics. Andrea and Chris suggested research directions.
+    <b>Research:</b> Alex came up with the initial idea of cosine similarity overlays.
+    Ruth developed its applications to interrogate different layers, geometric tranformations, and other similarity metrics.
+    Andrea and Chris suggested research directions.
   </p>
 
   <p>
-    <b>Writing & Diagrams:</b> The text was initially drafted by Ruth and refined by the other authors. The interactive diagrams were designed by Ruth. The final notebooks were primarily created by Ruth, based on earlier code and notebooks by Alex and Chris.
+    <b>Writing & Diagrams:</b> The text was initially drafted by Ruth and refined by the other authors.
+    The interactive diagrams were designed by Ruth.
+    The final notebooks were primarily created by Ruth, based on earlier code and notebooks by Alex and Chris.
   </p>
-
 
   <d-footnote-list></d-footnote-list>
   <d-citation-list></d-citation-list>
