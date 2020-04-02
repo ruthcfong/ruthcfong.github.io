@@ -103,10 +103,24 @@ d-figure > figure {
       {
         "author": "Chris Olah",
         "authorURL": "https://colah.github.io/",
-        "affiliation": "Google Brain",
-        "affiliationURL": "https://g.co/brain"
+        "affiliation": "OpenAI",
+        "affiliationURL": "https:/openai.com"
       }
-    ]
+    ],
+    "katex": {
+      "delimiters": [
+        {
+          "left": "$",
+          "right": "$",
+          "display": false
+        },
+        {
+          "left": "$$",
+          "right": "$$",
+          "display": true
+        }
+      ]
+    }
     }</script>
   <!--<script type="text/json">{
   "title": "Interactive Similarity Overlays",
@@ -175,7 +189,9 @@ d-figure > figure {
   <figure class="base-grid" id="splash-figure">
       <div id="multi" style="grid-column: screen; margin: 0 auto;"></div>
       <figcaption style="grid-column: text;">
-        <b>Hover over different parts of the above images</b>. This interactive visualization shows how similar (or different) a neural network considers different image patches to the current image patch (highlighted in yellow).
+        <b>Hover over different parts of the above images</b>.
+        This interactive visualization shows how similar (or different) a neural network considers different image patches to the current image patch (highlighted in yellow).
+        A few regions of interest include discriminative features of animals (e.g., noses, eyes, faces) and background scenes.
       </figcaption>
   </figure>
   <!--<div class="l-page" id="vtoc"></div>-->
@@ -187,7 +203,45 @@ d-figure > figure {
   <p>As digital technology has evolved over the past few decades, the ways we interact with it has also evolved.
     We have moved from typing on a keyboard and viewing a terminal console, to moving and clicking a mouse and observing a graphical user interface, to employing a variety of gestures on touchscreens and voice commands.
     However, despite the rapid progress in deep learning over the past few years<d-cite key="krizhevsky2012"></d-cite>, the modes of interacting with research outputs have remained largely unchanged: the primary visualization tools used in research are static plots, images, and videos.</p>
-  <p>In this work, we formalize <b>similarity overlays</b> &mdash; an interactive visualization technique that highlights how a network "sees" different image patches as similar or different.</p>
+  <p>In this work, we formalize <b>similarity overlays</b> &mdash; an interactive visualization technique that highlights how a network "sees" different image patches as similar or different.
+    We also demonstrate how similarity overlays can be combined with other visualization techniques, such as non-negative matrix factorization and interactive charts, to more richly communicate the learned representation of convolutional neural networks (CNNs).
+    Our work builds on a body of literature focused on interactive visualizations for understanding CNNs<d-cite key="olah2018building"></d-cite><d-cite key="hohman2019summit"></d-cite>.
+    However, unlike prior work, we design our similarity overlays so that they can be easily dropped into the existing workflow of a machine learning researcher in a plug-and-play fashion.
+    <d-footnote>
+      We release a lightweight, open-source <a href="https://github.com/ruthcfong/interactive_overlay">package</a> that abstracts away the web development components and can be used to easily generate our visualizations in a <a href="https://colab.research.google.com/">Colab</a> notebook using either <a href="https://www.tensorflow.org/">Tensorflow</a><d-cite key="abadi2016tensorflow"></d-cite> or <a href="https://pytorch.org/">PyTorch</a><d-cite key="paszke2017automatic"></d-cite>.
+    </d-footnote>
+  </p>
+
+  <p>
+    Interactive similarity overlays allow a user to hover over an image patch and visualize how similar (or different) other image patches are in a CNN representation (see right figure).
+    More precisely, let $s(\mathbf{z_1}, \mathbf{z_2}): \mathbb{R}^{D} \times \mathbb{R}^{D} \to \mathbb{R}$ be a similarity function
+    and let $f_l(\mathbf{x}): \mathbb{R}^{3 \times H \times W} \to \mathbb{R}^{D_l \times H_l \times W_l}$ be a function that takes in an input image and returns a 3D tensor (i.e., a CNN up to a given layer $l$).
+    <d-footnote>
+      Unless otherwise stated, we use the cosine similarity function, $s(\mathbf{z_1}, \mathbf{z_2}) = \frac{\mathbf{z_1} \cdot \mathbf{z_2}}{\lVert \mathbf{z_1} \rVert \lVert \mathbf{z_2} \rVert}$, and GoogLeNet's mixed4d layer as $f_l(\mathbf{x})$.
+    </d-footnote>
+    Now, let $\mathbf{z} = f_l(\mathbf{x})$ and let $\mathbf{z_{i,j}}$ denote the activation at the $(i,j)$-th spatial location in $z$.
+    Then, we visualize the similarity between a given spatial location $(i,j)$ and every other location $(u,v)$, which is given by $s(\mathbf{z_{i,j}}, \mathbf{z_{u,v}})$.
+    This yields a simple and intuitive visualization that allows for easy exploration of different phenomena, which we explore in the rest of this article.
+  </p>
+  <div class="l-page side">
+    <figure>
+      <div id="example"></div>
+      <figcaption><b>Hover over image.</b>
+        The intensity of other patches (lighter denotes more similar) captures the similarity to the highlighted image patch (in yellow).
+      </figcaption>
+    </figure>
+  </div>
+  <p>
+    With this visualization technique, we can compare similarities of spatial locations <i>across</i> images, as shown in the splash figure above.
+    Within this set of images, we notice that simple background scenes (e.g., those for the dog and cat, flowers, and bird images) are similarity activated despite being visually different.
+    We also observe that a few features such as eyes are shared across object classes (i.e., different species).
+    Taken together, these observations suggest that CNNs are capable of learning broad and flexible semantic concepts.
+  </p>
+  <p>
+    This multi-image example also highlights the main benefit of interactive similarity overlays, which is their ability to allow users to digest a complex amount of data in an interpretable way.
+    For $N$ images, the full scale of the similarities between all image patches is $\mathcal{O}(N^2 \times H_{l}^2 \times W_{l}^2)$.
+    By displaying similarities interactively, we show $\mathcal{O}(N \times H_l \times W_l)$ similarity scores.
+  </p>
   <!--<p>We can also cite <d-cite key="gregor2015draw"></d-cite> external publications<d-cite key="lenc2015understanding"></d-cite>.</p>-->
 
   <!-- 
@@ -200,6 +254,7 @@ d-figure > figure {
   <!--TODO(ruthfong): Add figures -->
 
   <h2 id="layers">Exploring Different Layers' Representations</h2>
+
   <!--<figure style="grid-column: screen;" class="shaded-figure">
     <d-figure class="base-grid" id="todo_dfigure"></d-figure>
     <div class="base-grid" style="margin-top: 4px;" >
@@ -214,13 +269,12 @@ d-figure > figure {
     <div id='line-chart'></div>
   </figure>-->
 
-
   <figure class="base-grid shaded-figure">
     <figcaption style="grid-column: kicker;">
       <div id="colab-different_layers"></div>
     </figcaption>
     <d-figure style="grid-column: text-start / page-end;" id="different_layers">
-      <figcaption><b>Different Layers.</b></figcaption>
+      <figcaption><b>Layers with different spatial resolutions.</b></figcaption>
     </d-figure>
   </figure>
 
