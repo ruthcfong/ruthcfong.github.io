@@ -242,6 +242,9 @@ d-figure > figure {
     For $N$ images, the full scale of the similarities between all image patches is $\mathcal{O}(N^2 \times H_{l}^2 \times W_{l}^2)$.
     By displaying similarities interactively, we show $\mathcal{O}(N \times H_l \times W_l)$ similarity scores.
   </p>
+  <p>
+  In the rest of the article, we demonstrate the utility of our interactive similarity overlays in several "case studies."
+  </p>
   <!--<p>We can also cite <d-cite key="gregor2015draw"></d-cite> external publications<d-cite key="lenc2015understanding"></d-cite>.</p>-->
 
   <!-- 
@@ -255,6 +258,32 @@ d-figure > figure {
 
   <h2 id="layers">Exploring Different Layers' Representations</h2>
 
+  <p>
+  First, we consider how interactive similarity overlays help us explore the representations of <i>different</i> CNN layers.
+  </p>
+  <p>
+
+  Most prior works (TODO: refs) have explored layer representations from two perspectives:
+  1., by exploring how representations in a layer corresponds with different kinds of semantic concepts (e.g., low-level concepts like colors and textures to high-level concepts like objects and scenes), and
+  2., by visualizing the preferred stimuli of a neuron in specific layer (e.g., activation maximization) or the stimuli that best correspond with a reference activation tensor (e.g., representation inversion, caricatures).
+  The former approach typically requires access to already annotated dataset or to human annotators to define semantic concepts with which to "test" a CNN layer representation and is limited by the breadth and quality of annotation.
+  The latter approach produces a static visualization that often trades off interpretability with fidelity.<d-footnote>
+    In the case of feature visualizations, interpretability refers to how easily interpretable a visualization is (e.g., some feature visualizations are highly unnatural and are hard to reason about), while fidelity refers to how faithful a visualization is to the model component (e.g., neuron or activation tensor) being explained (e.g., some feature visualizations rely on strong priors in order to be more interpretable by trading off fidelity). Refer to <d-cite key="olah2017feature"></d-cite> for a discussion of this tradeoff.
+  </d-footnote>
+  In contrast, our interactive visualization similarity does not require a natural image prior or concept prior (i.e., external dataset).
+  Furthermore, thanks to its interactive nature, our visualization faithfully renders information about similarities in activations in an interpretable interface.
+  <!-- This allows us to explore hypotheses about network behavior without being biased by priors. -->
+  </p>
+
+  <p>
+  To compare representations of the same input image at different layers, we compute representational similarities within each layer and <i>synchronize</i> the spatial location being explained across layers (i.e., the highlighted image patch in yellow).
+  Using this synchronization trick, we first explore the representation of layers with different spatial resolutions.
+  Consistent with some prior work, we find that the earlier layers seem to capture lower-level features like edges while later layers tend to highlight higher-level, semantic features  object parts.
+  We also notice that the representations of later layers appear more smooth.
+  </p>
+  <!--
+    First, by visualizing the same image at different locations in a CNN (e.g., network layers), we demonstrate how our technique can be used to explore and understand model representations at different depths.
+  -->
   <!--<figure style="grid-column: screen;" class="shaded-figure">
     <d-figure class="base-grid" id="todo_dfigure"></d-figure>
     <div class="base-grid" style="margin-top: 4px;" >
@@ -274,9 +303,17 @@ d-figure > figure {
       <div id="colab-different_layers"></div>
     </figcaption>
     <d-figure style="grid-column: text-start / page-end;" id="different_layers">
-      <figcaption><b>Layers with different spatial resolutions.</b></figcaption>
+      <figcaption><b>Layers with different spatial resolutions.</b><br></figcaption>
     </d-figure>
+    <!--<d-figure style="grid-column: text-start / page-end;">
+      <figcaption>Hover.</figcaption>
+    </d-figure>-->
   </figure>
+
+  <p>
+    We also explore the representation of layers with the same spatial resolution.
+    In this exploration, we confirm our intuition that layer depth affects both the representational smoothness and semantic-ness.
+  </p>
 
   <figure class="base-grid shaded-figure">
     <figcaption style="grid-column: kicker;">
@@ -309,11 +346,33 @@ d-figure > figure {
 -->
 
   <h2 id="class_similarities">Similarities Across Images</h2>
-    <p>Perceptual engines
-      <d-footnote>Blog post<d-cite key="white2018"></d-cite>; <a href="https://dribnet.bigcartel.com/category/perception-engines">store</a></d-footnote>
+    <p>
+      We can also use our visualization to explore representational similarities across images of the same class.
+      One interesting application is to compare correspondences between natural images and generated images.
+      To that effect, we compute representational similarities among several images, including ones generated to be classified as the same class.<d-footnote>
+        These generated images were constrained by brush strokes and inks appear like modern art.
+        See <d-cite key="white2018"></d-cite> for more details about their generation process. <!--(the prints are available <a href="https://dribnet.bigcartel.com/category/perception-engines">here</a>).-->
+      </d-footnote>
+      We observe that there seem to be a few correspondences (e.g., awareness of spatial position on an object, such as blow dryer handle vs. nozzle).
     </p>
-    <p>Non-negative matrix factorization.</p>
-    <p>Combining multiple layers of abstraction<d-cite key="victor2011"></d-cite>.</p>
+
+    <p>
+      To enhance our visualization and suggest a few corresonding features, we combined our similarity overlays with another visualization tool: matrix factorization.
+      Matrix factorization factors instances into several groups which best explain the variation in a set.
+      In the following example, we use matrix factorization to group activation vectors at different spatial locations (and in different images) into discrete groups.<d-footnote>
+        TODO -- describe matrix factorization in more detail.
+        TODO -- describe how the figure was generated.
+      </d-footnote>
+      By combining these two visualization techniques together, we glean more information about the CNN representations being visualized than if we were to use either technique alone.
+      Now, we are able to notice and confirm more interesting correspondences (e.g., the correspondence to abstract strokes in the generated image, such as free black strokes corresponding to cords in the blow dryer example).
+    </p>
+<!--
+    The groups that come out of this factorization will be the atoms of the interface a user works with. Unfortunately, any grouping is inherently a tradeoff between reducing things to human scale and, because any aggregation is lossy, preserving information. Matrix factorization lets us pick what our groupings are optimized for, giving us a better tradeoff than the natural groupings we saw earlier.
+
+The goals of our user interface should influence what we optimize our matrix factorization to prioritize. For example, if we want to prioritize what the network detected, we would want the factorization to fully describe the activations. If we instead wanted to prioritize what would change the network’s behavior, we would want the factorization to fully describe the gradient. Finally, if we want to prioritize what caused the present behavior, we would want the factorization to fully describe the attributions. Of course, we can strike a balance between these three objectives rather than optimizing one to the exclusion of the others.
+
+In the following diagram, we’ve constructed groups that prioritize the activations, by factorizing the activations 3 with non-negative matrix factorization 4  . Notice how the overwhelmingly large number of neurons has been reduced to a small set of groups, concisely summarizing the story of the neural network.
+-->
 
     <figure class="base-grid shaded-figure">
       <figcaption style="grid-column: kicker;">
@@ -364,8 +423,7 @@ d-figure > figure {
       Black marks seems to correspond to legs / extremities-->
     <div id="tick_images"></div>
     <div id="tick_components"></div>
-
-    <figcaption><b>Perceptual engines.</b></figcaption>
+    <!--<figcaption><b>Perceptual engines.</b></figcaption>-->
   </figure>
 
   <!--TODO(ruthfong): Add Picker -->
@@ -396,6 +454,27 @@ d-figure > figure {
   </div>-->
 
   <h2 id="transformations">Sensitivity to Geometric Transformations</h2>
+    <p>
+      In a final example, we demonstrate how our interactive similarity overlays help us explore the how sensitive or invariant a representation is geometric transformations (e.g., rotation, scale). 
+      By systematically transforming an image (e.g., fixed-degree rotation) and visualizing representational similarities across transformed images, we can visually inspect the impact of a given transformation.
+      We can also combine our overlays with an interactive chart visualization.
+    </p>
+
+    <p>
+      In the rotation example, we show a line chart that displays the similarity scores of the highlighted image patch as well as the corresponding patch in the other transformed images.
+      By leveraging both visualizations, we can quickly notice that more discriminative and oriented features (e.g., animal nose) are more sensitive to rotation than more texture-based, background features (e.g., grass).
+      We also discover rotational sensitivity at image borders; this is likely an artifact from padding the boundaries with zero padding.<d-footnote>
+        Highlight a boundary pixel and move inward towards the center of the image; you will notice that the ripple effect in similarity scores becomes smaller as your cursor moves towards the image center.
+        Because of the large receptive fields at the deep layer, patches in between the image border and center may still be partially affected by boundary effects.
+      </d-footnote>
+    </p>
+
+    <p>
+      By combining visualizations at different layers of abstraction (e.g., qualitative visualization of similarities across all image patches vs. quantitative visualization of similarities of a subset of relevant patches), we demonstrate the utility of combining techniques that visualize different abstraction levels.<d-footnote>
+        See <d-cite key="victor2011"></d-cite> for further discussion on the benefits of combining multiple layers of abstraction.
+      </d-footnote>
+    </p>
+
 
   <figure class="base-grid shaded-figure">
     <figcaption style="grid-column: kicker;">
@@ -406,6 +485,12 @@ d-figure > figure {
     </d-figure>
   </figure>
 
+  <p>
+    In the scale example, we observe that the spatial relationship within an image of a given scale are similar across scales (e.g., moving a mouse around in one image generates similar "movements" in other images).
+    However, by plotting the similarity scores of the highlighted feature across scales, we see more clearly and quantitatively that representational similarity is somewhat sensitive to large scale changes.
+    This seems to be true for both discriminative features and background ones, though textural, background features may be less sensitive (e.g., background grass vs. cat nose).
+  </p>
+
   <figure class="base-grid shaded-figure">
     <figcaption style="grid-column: kicker;">
       <div id="colab-scale"></div>
@@ -415,6 +500,17 @@ d-figure > figure {
     </d-figure>
   </figure>
 
+  <h2 id="conclusion">Conclusion</h2>
+  <p>
+    In summary, we introduce a simple interactive visualization technique, interactive similarity overlays, which allow a user to investigate the representational similarity of various images.
+    Our visualization is both interpretable and faithful to the model being explained: Its interactivity allows it to render interpretable (e.g., easy to understand) the similarity scores between image patches, while self-suffiency from needing a prior (e.g., a concept prior or image prior) ensures it faithfully explains the model's behavior.
+    We highlighted how our visualization enables the exploration of a few CNN properties as well as how it can be thoughtfully combined with other techniques.
+  </p>
+  <p>
+    Ideally, there should be a suite of easy-to-use visualization tools for understanding CNNs that can be easily combined.
+    To that end, we also release a small package<d-footnote><a href="https://github.com/ruthcfong/interactive_overlay">github.com/ruthcfong/interactive_overlay</a></d-footnote> that allows anyone to easily use our interactive similarity overlays in an IPython notebook with any modern deep-learning framework (e.g., Tensorflow, PyTorch) and without requiring knowledge of Javascript.
+    We hope further work is done to develop similar visualizations that empower machine learning practitioners and researchers to easily explore the behavior of their models.
+  </p>
   <!--
   <figure>
     <div id="rotate_dog_cat_images"></div>
@@ -468,9 +564,11 @@ d-figure > figure {
 
 <d-appendix>
   <h3>Acknowledgments</h3>
-  <p>
-    We are deeply grateful to...
-  </p>
+    <p>
+      We are deeply grateful to the following people for helpful conversations: David Bau, Xu Ji, Sam Albanie, Mandela Patrick, Ludwig Schubert, Gabriel Goh, and Nick Cammarata.
+      We are also thankful to the discussion groups organized by Xu Ji within the VGG group and organized by Chris Olah within the Distill Slack workspace.
+      On the Distill side, we are especially grateful to Ludwig Schubert for his Javascript debugging expertise.
+    </p>
 
   <p>
     Lastly, this work was made possible by many open source tools, for which we are grateful.
@@ -482,15 +580,18 @@ d-figure > figure {
   <h3>Author Contributions</h3>
   <p>
     <b>Research:</b> Alex came up with the initial idea of cosine similarity overlays.
-    Ruth developed its applications to interrogate different layers, geometric tranformations, and other similarity metrics.
-    Andrea and Chris suggested research directions.
+    Ruth developed its applications to interrogate different layers, geometric transformations, etc.
+    Andrea and Chris suggested helpful research directions; in particular, Chris suggested combining similarity overlays with other visualization techniques.
   </p>
 
   <p>
     <b>Writing & Diagrams:</b> The text was initially drafted by Ruth and refined by the other authors.
-    The interactive diagrams were designed by Ruth.
+    The interactive diagrams were designed by all authors.
     The final notebooks were primarily created by Ruth, based on earlier code and notebooks by Alex and Chris.
   </p>
+
+  <h3>Implementation Details</h3>
+  <p>TODO.</p>
 
   <d-footnote-list></d-footnote-list>
   <d-citation-list></d-citation-list>
