@@ -222,7 +222,7 @@ d-figure > figure {
     More precisely, let $s(\mathbf{z_1}, \mathbf{z_2}): \mathbb{R}^{D} \times \mathbb{R}^{D} \to \mathbb{R}$ be a similarity function
     and let $f_l(\mathbf{x}): \mathbb{R}^{3 \times H \times W} \to \mathbb{R}^{D_l \times H_l \times W_l}$ be a function that takes in an input image and returns a 3D tensor (i.e., a CNN up to a given layer $l$).
     <d-footnote>
-      Unless otherwise stated, we use the cosine similarity function, $s(\mathbf{z_1}, \mathbf{z_2}) = \frac{\mathbf{z_1} \cdot \mathbf{z_2}}{\lVert \mathbf{z_1} \rVert \lVert \mathbf{z_2} \rVert}$, and GoogLeNet's mixed4d layer as $f_l(\mathbf{x})$.
+      Unless otherwise stated, we use the cosine similarity function, $s(\mathbf{z_1}, \mathbf{z_2}) = \frac{\mathbf{z_1} \cdot \mathbf{z_2}}{\lVert \mathbf{z_1} \rVert \lVert \mathbf{z_2} \rVert}$, and GoogLeNet's<d-cite key="szegedy2015googlenet"></d-cite> mixed4d layer as $f_l(\mathbf{x})$.
       We chose the cosine similarity function because it is the noramlized dot product of two vectors, which quantifies the angle between them (i.e., it captures the <i>directional</i> similarity of two vectors).
     </d-footnote>
     Now, let $\mathbf{z} = f_l(\mathbf{x})$ and let $\mathbf{z_{i,j}}$ denote the activation at the $(i,j)$-th spatial location in $z$.
@@ -357,9 +357,9 @@ d-figure > figure {
     <p>
       We can also use our visualization to explore representational similarities across images of the same class.
       One interesting application is to compare correspondences between natural images and generated images.
-      To that effect, we compute representational similarities among several images, including ones generated to be classified as the same class.<d-footnote>
+      To that effect, we compute representational similarities among several images, including ones generated to be classified as the same class<d-cite key="white2019shared"></d-cite>.<d-footnote>
         These generated images were constrained by brush strokes and inks appear like modern art.
-        See <d-cite key="white2018"></d-cite> for more details about their generation process. <!--(the prints are available <a href="https://dribnet.bigcartel.com/category/perception-engines">here</a>).-->
+        See <d-cite key="white2019shared"></d-cite> for more details about their generation process (the prints are available for purchase <a href="https://dribnet.bigcartel.com/category/perception-engines">here</a>).
       </d-footnote>
       We observe that there seem to be a few correspondences (e.g., awareness of spatial position on an object, such as blow dryer handle vs. nozzle).
     </p>
@@ -368,8 +368,7 @@ d-figure > figure {
       To enhance our visualization and suggest a few corresonding features, we combined our similarity overlays with another visualization tool: matrix factorization.
       Matrix factorization factors instances into several groups which best explain the variation in a set.
       In the following example, we use matrix factorization to group activation vectors at different spatial locations (and in different images) into discrete groups.<d-footnote>
-        TODO -- describe matrix factorization in more detail.
-        TODO -- describe how the figure was generated.
+        See "Implementation Details" at the end of the article for more information about how this figure was generated.
       </d-footnote>
       By combining these two visualization techniques together, we glean more information about the CNN representations being visualized than if we were to use either technique alone.
       Now, we are able to notice and confirm more interesting correspondences (e.g., the correspondence to abstract strokes in the generated image, such as free black strokes corresponding to cords in the blow dryer example).
@@ -387,50 +386,50 @@ In the following diagram, we’ve constructed groups that prioritize the activat
         <div id="colab-perceptual"></div>
       </figcaption>
       <d-figure style="grid-column: text-start / page-end;" id="perceptual">
-        <figcaption><b>Perceptual Engines.</b></figcaption>
+        <figcaption><b>Comparison with generated images and matrix factors.</b></figcaption>
       </d-figure>
     </figure>
     <figure>
     <!-- Select 10 images to compute components over (default 4; reduced to 3 if 4 seemed too many); showing 5 + perceptual engine -->
     <!-- Too few/many images that are too visually varied -- hard to get clear components -->
     <!-- Blow dryer: 4 components; black strokes correspond to cord (purple component); nozzle part vs. handle -->
-    <div id="blow_dryer_images"></div>
-    <div id="blow_dryer_components"></div>
+    <!--<div id="blow_dryer_images"></div>
+    <div id="blow_dryer_components"></div>-->
     <!-- Cello: 4 components; perceptual engine doesn't correspond to all components (i.e., what I thought would be the "human" corresponds to cello) -->
     <!-- Human = component; body vs. neck/strings as component-->
-    <div id="cello_images"></div>
-    <div id="cello_components"></div>
+    <!--<div id="cello_images"></div>
+    <div id="cello_components"></div>-->
     <!-- iron: 4 components; the stone age one; the handle sems to correspond to check mark black stroke in perceptual engine -->
     <!-- bottom, middle, handle components + background-->
-    <div id="iron_images"></div>
-    <div id="iron_components"></div>
+    <!--<div id="iron_images"></div>
+    <div id="iron_components"></div>-->
     <!-- hammerhead: 4 components; top-to-bottom spatial awareness; also inside-outside extremeties -->
-    <div id="hammerhead_images"></div>
-    <div id="hammerhead_components"></div>
+    <!--<div id="hammerhead_images"></div>
+    <div id="hammerhead_components"></div>-->
     <!-- binoculars: 4 components; different components correspond to three different orientations -->
     <!-- cross marks in perceptual image corresponds to cords possibly -->
-    <div id="binoculars_images"></div>
-    <div id="binoculars_components"></div>
+    <!--<div id="binoculars_images"></div>
+    <div id="binoculars_components"></div>-->
     <!-- cabbage: 3 components; correspond to center and extremity -->
-    <div id="cabbage_images"></div>
-    <div id="cabbage_components"></div>
+    <!--<div id="cabbage_images"></div>
+    <div id="cabbage_components"></div>-->
     <!-- jackolantern: 3 components; correspond to center and extremity (4 components didn't make as much sense) -->
     <!-- spatial awareness top-down (but not side to side for symmetric objects) -->
     <!-- top of the pumpkin corresponds to stem? -->
-    <div id="jackolantern_images"></div>
-    <div id="jackolantern_components"></div>
+    <!--<div id="jackolantern_images"></div>
+    <div id="jackolantern_components"></div>-->
     <!-- measuring_cup: 4 components; Spatial awareness top-down also shown in components
       Other reference illustration (last image) fairly good as a reference -->
-    <div id="measuring_cup_images"></div>
-    <div id="measuring_cup_components"></div>
+    <!--<div id="measuring_cup_images"></div>
+    <div id="measuring_cup_components"></div>-->
     <!-- starfish: 3 components; inside and outside
       crosses might correspond to extremeties (see bottom right cross) -->
-    <div id="starfish_images"></div>
-    <div id="starfish_components"></div>
+    <!--<div id="starfish_images"></div>
+    <div id="starfish_components"></div>-->
     <!-- tick: 4 components; Body / head / legs
       Black marks seems to correspond to legs / extremities-->
-    <div id="tick_images"></div>
-    <div id="tick_components"></div>
+    <!--<div id="tick_images"></div>
+    <div id="tick_components"></div>-->
     <!--<figcaption><b>Perceptual engines.</b></figcaption>-->
   </figure>
 
@@ -577,8 +576,9 @@ In the following diagram, we’ve constructed groups that prioritize the activat
 <d-appendix>
   <h3>Acknowledgments</h3>
     <p>
-      We are deeply grateful to the following people for helpful conversations: David Bau, Xu Ji, Sam Albanie, Mandela Patrick, Ludwig Schubert, Gabriel Goh, and Nick Cammarata.
+      We are deeply grateful to the following people for helpful conversations: Tom White, David Bau, Been Kim, Xu Ji, Sam Albanie, Mandela Patrick, Ludwig Schubert, Gabriel Goh, and Nick Cammarata.
       We are also thankful to the discussion groups organized by Xu Ji within the VGG group and organized by Chris Olah within the Distill Slack workspace.
+      We are also particularly grateful to Tom White for his permission to use his "Perceptual Engines" generated images<d-cite key="white2019shared"></d-cite> and to Been Kim for open-sourcing the Gestalt dataset<d-cite key="kim2019neural"></d-cite> for this project.
       On the Distill side, we are especially grateful to Ludwig Schubert for his Javascript debugging expertise.
     </p>
 
@@ -603,8 +603,18 @@ In the following diagram, we’ve constructed groups that prioritize the activat
   </p>
 
   <h3>Implementation Details</h3>
-  <p>TODO.</p>
-
+  <p>
+    <b>General:</b>
+    Unless otherwise stated, we use the cosine similarity function, $s(\mathbf{z_1}, \mathbf{z_2}) = \frac{\mathbf{z_1} \cdot \mathbf{z_2}}{\lVert \mathbf{z_1} \rVert \lVert \mathbf{z_2} \rVert}$ as the similarty function with which we compute overlays and visualize GoogLeNet's<d-cite key="szegedy2015googlenet"></d-cite> mixed4d layer as $f_l(\mathbf{x})$.
+  </p>
+  <p>
+    <b>Non-negative matrix factorization (NNMF):</b>
+    For each object class (e.g., blow dryer), 10 (out of 50) real images from the ImageNet<d-cite key="russakovsky2015imagenet"></d-cite> validation set for that class were selected.
+    NNMF was computed on the set of 11 images (10 real images and 1 generated image).
+    By default, 4 components were computed; upon visual inspection, this was reduced to 3 for a few object classes.
+    We found that 10 real images to be the ideal number of images to use to compute salient components and chose images that shared some common visual similarities with one another (e.g., simple backgrounds for blow dryer example).
+    We then selected 5 of the 10 real images to be shown in the figure.
+  </p>
   <d-footnote-list></d-footnote-list>
   <d-citation-list></d-citation-list>
 </d-appendix>
