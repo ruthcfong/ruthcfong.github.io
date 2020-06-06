@@ -34,6 +34,11 @@ d-figure > figure {
   margin-bottom: 0;
 }
 
+figcaption {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .shaded-figure {
   background-color: hsl(0, 0%, 97%);
   border-top: 1px solid hsla(0, 0%, 0%, 0.1);
@@ -188,10 +193,10 @@ d-figure > figure {
   <p>An interactive tool for understanding what neural networks consider similar and different.</p>
   <figure class="base-grid" id="splash-figure">
       <div id="multi" style="grid-column: screen; margin: 0 auto;"></div>
-      <figcaption style="grid-column: text;">
+      <figcaption style="grid-column: text; text-align:justify;">
         <b>Hover over different parts of the above images</b>.
         This interactive visualization shows how similar (or different) a neural network considers different image patches to the current image patch (highlighted in yellow).
-        A few regions of interest include discriminative features of animals (e.g., noses, eyes, faces) and background scenes.
+        Try hovering over animal features (e.g., noses, eyes, faces) and background regions.
       </figcaption>
   </figure>
   <!--<div class="l-page" id="vtoc"></div>-->
@@ -201,45 +206,61 @@ d-figure > figure {
 
 <d-article>
   <p>As digital technology has evolved over the past few decades, the ways we interact with it has also evolved.
-    We have moved from typing on a keyboard and viewing a terminal console, to moving and clicking a mouse and observing a graphical user interface, to employing a variety of gestures on touchscreens and voice commands.
-    However, despite the rapid progress in deep learning over the past few years<d-cite key="krizhevsky2012"></d-cite>, the modes of interacting with research outputs have remained largely unchanged: the primary visualization tools used in research are static plots, images, and videos.</p>
+    We have moved from typing on a keyboard and viewing a terminal console, to using a mouse and graphical user interface, to employing a variety of touchscreen gestures and voice commands.
+    However, despite the rapid progress in deep learning over the past few years<d-cite key="krizhevsky2012,he2017mask,silver2017mastering,devlin2018bert"></d-cite>, the ways we interact with research artifacts have remained largely unchanged: most visualizations used in research are non-responsive plots, images, and videos.</p>
+    <!--
+* Lightweight (plug-and-play; works for anything else) + re-useable
+* interactive visualization (vs. visual interface, a way to navigate an interface, like TensorFlow)
+lots of work on visual interfaces~\cite{X}, black-box access~\cite{X}, pedogogical visualization of one model~\cite{X} -- in contrast, our work is an interactive visualization, white-box access, and easily works with any model.
+similar to work on self-similarity feature descriptors~\cite{X}
+    -->
   <p>
-    In this work, we formalize <b>similarity overlays</b> &mdash; an interactive visualization technique that highlights how a network "sees" different image patches as similar or different.
-    Our work builds on a body of literature focused on interactive visualizations for understanding CNNs<d-cite key="yosinski2015understanding,tensorflow2017neural,olah2018building,hohman2020summit,hohman2020understanding"></d-cite>.
-    <d-footnote>
+    In this work, we formalize <b>interactive similarity overlays</b> &mdash; an interactive visualization that highlights how a network "sees" different image patches as similar or different.
+    Our method builds off of prior work on interactive visualizations for understanding CNNs<d-cite key="yosinski2015understanding,tensorflow2017neural,olah2018building,carter2019activation,hohman2020summit,hohman2020understanding"></d-cite><d-footnote>
       See <d-cite key="sacha2017you,hohman2018visual"></d-cite> for a survey of visualizations for machine learning and deep learning respectively.
     </d-footnote>
-    We also demonstrate how similarity overlays can be combined with other visualization techniques, such as non-negative matrix factorization and interactive charts, to more richly communicate the learned representation of convolutional neural networks (CNNs).
-    We design our similarity overlays so that they can be easily dropped into the existing workflow of a machine learning researcher in a plug-and-play fashion.
     <d-footnote>
-      We release a lightweight, open-source <a href="https://github.com/ruthcfong/interactive_overlay">package</a> that abstracts away the web development components and can be used to easily generate our visualizations in a <a href="https://colab.research.google.com/">Colab</a> notebook using either <a href="https://www.tensorflow.org/">Tensorflow</a><d-cite key="abadi2016tensorflow"></d-cite> or <a href="https://pytorch.org/">PyTorch</a><d-cite key="paszke2017automatic"></d-cite>.
+      A number of works use interactivity to navigate a visual interface<d-cite key="abadi2016tensorflow,wexler2019if"></d-cite>, focus on visualizing a single model or dataset deeply for pedogogical purposes<d-cite key="wattenberg2016use,carter2016experiments,hohman2017shapeshop,torralba2017drawnet,smilkov2017direct,norton2017adversarial,kahng2018gan,madsen2019visualizing"></d-cite>, treat a model as a black-box by visualizing model inputs and outputs (not internal components)<d-cite key="webster2017now,pair2017facets,wexler2019if"></d-cite>, and/or explore other kinds of models or feature representations (e.g., GANs<d-cite key="zhu2016generative,kahng2018gan,bau2019semantic"></d-cite>, RNNs<d-cite key="strobelt2017lstmvis,strobelt2018seq,madsen2019visualizing"></d-cite>, etc.<d-cite key="talbot2009ensemblematrix,olah2014visualizing,wattenberg2016use,hohman2019gamut"></d-cite>).
+      In contrast, our work is an interactive visualization that can be used to explain the internal representation of any CNN model.
     </d-footnote>
+    and self-similarity image descriptors<d-cite key="shechtman2007matching,deselaers2010global,seo2009static,vedaldi2009multiple"></d-cite>.
+    We also demonstrate how similarity overlays can be combined with other visualization techniques, such as non-negative matrix factorization and interactive charts, to more richly explore the learned representations of convolutional neural networks (CNNs).
+    <!--In contrast to prior work on visual interfaces~\cite{X}, black-box interpretability~\cite{X}, ;-->
+    We design our similarity overlays so that they can be easily extended or dropped into the existing workflow of a machine learning researcher.<!-- in a plug-and-play fashion.-->
+    <!--<d-footnote>
+      We release a lightweight, open-source <a href="https://github.com/ruthcfong/interactive_overlay">package</a> that abstracts away the web development components and can be used to easily generate our visualizations in a <a href="https://colab.research.google.com/">Colab</a> notebook for any Python deep learning framework (e.g., <a href="https://www.tensorflow.org/">Tensorflow</a><d-cite key="abadi2016tensorflow"></d-cite>, <a href="https://pytorch.org/">PyTorch</a><d-cite key="paszke2017automatic"></d-cite>).
+    </d-footnote>
+  -->
+    To that end, we release a lightweight package<d-footnote>
+      <a href="https://github.com/ruthcfong/interactive_overlay">github.com/ruthcfong/interactive_overlay</a> 
+    </d-footnote>
+    that abstracts away the web development aspects of the visualization; with it, researchers can easily generate similarity overlays for any CNN with a Python interface (e.g., TensorFlow<d-cite key="abadi2016tensorflow"></d-cite>, PyTorch<d-cite key="paszke2017automatic"></d-cite>).
   </p>
 
   <div>
   <p>
     Interactive similarity overlays allow a user to hover over an image patch and visualize how similar (or different) other image patches are in a CNN representation (see right figure).
     More precisely, let $s(\mathbf{z_1}, \mathbf{z_2}): \mathbb{R}^{D} \times \mathbb{R}^{D} \to \mathbb{R}$ be a similarity function
-    and let $f_l(\mathbf{x}): \mathbb{R}^{3 \times H \times W} \to \mathbb{R}^{D_l \times H_l \times W_l}$ be a function that takes in an input image and returns a 3D tensor (i.e., a CNN up to a given layer $l$).
+    and let $f_l(\mathbf{x}): \mathbb{R}^{3 \times H \times W} \to \mathbb{R}^{D_l \times H_l \times W_l}$ be a function that takes in an input image and returns a 3D tensor (i.e., a CNN up to layer $l$).
     <d-footnote>
       Unless otherwise stated, we use the cosine similarity function, $s(\mathbf{z_1}, \mathbf{z_2}) = \frac{\mathbf{z_1} \cdot \mathbf{z_2}}{\lVert \mathbf{z_1} \rVert \lVert \mathbf{z_2} \rVert}$, and GoogLeNet's<d-cite key="szegedy2015googlenet"></d-cite> mixed4d layer as $f_l(\mathbf{x})$.
       We chose the cosine similarity function because it is the noramlized dot product of two vectors, which quantifies the angle between them (i.e., it captures the <i>directional</i> similarity of two vectors).
     </d-footnote>
-    Now, let $\mathbf{z} = f_l(\mathbf{x})$ and let $\mathbf{z_{i,j}}$ denote the activation at the $(i,j)$-th spatial location in $z$.
-    Then, we visualize the similarity between a given spatial location $(i,j)$ and every other location $(u,v)$, which is given by $s(\mathbf{z_{i,j}}, \mathbf{z_{u,v}})$.
+    Now, let $\mathbf{z} = f_l(\mathbf{x})$ and let $\mathbf{z}_{i,j}$ denote the activation at the $(i,j)$-th spatial location in $z$.
+    Then, we visualize the similarity between a given spatial location $(i,j)$ and every other location $(u,v)$, which is given by $s(\mathbf{z}_{i,j}, \mathbf{z}_{u,v})$.
     This yields a simple and intuitive visualization that allows for easy exploration of different phenomena, which we explore in the rest of this article.
   </p>
   <p>
     With this visualization technique, we can compare similarities of spatial locations <i>across</i> images, as shown in the splash figure above.
     Within this set of images, we notice that simple background scenes (e.g., those for the dog and cat, flowers, and bird images) are similarity activated despite being visually different.
-    We also observe that a few features such as eyes are shared across object classes (i.e., different species).
+    We also observe that a few features such as eyes are common across object classes (i.e., different species).
     Taken together, these observations suggest that CNNs are capable of learning broad and flexible semantic concepts.
   </p>
   </div>
   <div class="l-page side">
     <figure>
       <div id="example"></div>
-      <figcaption><b>Hover over image.</b>
+      <figcaption style="width:234px; text-align:justify;"><b>Hover over image.</b>
         The intensity of other patches (lighter denotes more similar) captures the similarity to the highlighted image patch (in yellow).
       </figcaption>
     </figure>
@@ -250,7 +271,7 @@ d-figure > figure {
     By displaying similarities interactively, we show $\mathcal{O}(N \times H_l \times W_l)$ similarity scores.
   </p>
   <p>
-  In the rest of the article, we demonstrate the utility of our interactive similarity overlays in several "case studies."
+  In the rest of the article, we demonstrate the utility of our interactive similarity overlays in several case studies.
   </p>
 
   <!-- 
@@ -510,8 +531,8 @@ In the following diagram, we’ve constructed groups that prioritize the activat
   <h2 id="conclusion">Conclusion</h2>
   <p>
     In summary, we introduce a simple interactive visualization technique, interactive similarity overlays, which allow a user to investigate the representational similarity of various images.
-    Our visualization is both interpretable and faithful to the model being explained: Its interactivity allows it to render interpretable (e.g., easy to understand) the similarity scores between image patches, while self-suffiency from needing a prior (e.g., a concept prior or image prior) ensures it faithfully explains the model's behavior.
-    We highlighted how our visualization enables the exploration of a few CNN properties as well as how it can be thoughtfully combined with other techniques.
+    Our visualization is both interpretable and faithful to the model being explained: its interactivity allows it to render interpretable (e.g., easy to understand) the similarity scores between image patches, while self-suffiency from needing a prior (e.g., a concept prior or image prior) ensures it accurately explains the model's behavior.
+    We highlighted how our visualization enables the exploration of a few CNN properties as well as how it can be thoughtfully combined with other techniques to yield further insights.
   </p>
 
   <p>

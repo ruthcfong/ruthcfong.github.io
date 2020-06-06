@@ -25,6 +25,11 @@ d-figure > figure {
   margin-bottom: 0;
 }
 
+figcaption {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .shaded-figure {
   background-color: hsl(0, 0%, 97%);
   border-top: 1px solid hsla(0, 0%, 0%, 0.1);
