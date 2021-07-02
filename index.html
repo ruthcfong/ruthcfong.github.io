@@ -120,6 +120,7 @@
         <td>
           <heading>News</heading>
             <ul>
+              <li>We have a new report out on "Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims." <a href="http://www.towardtrustworthyai.com/">webpage</a> | <a href="https://arxiv.org/abs/2004.07213">arXiv</a>
               <li>We just released <a href="https://github.com/facebookresearch/TorchRay">TorchRay</a>, a PyTorch interpretability library. In the initial release, we focus on attribution and re-implemented popular methods and benchmarks to encourage reproducible research. Resources:
               	<a href="http://ruthcfong.github.io/files/fong19_torchray_tutorial.pdf">tutorial slides</a> | 
               	<a href="https://bit.ly/torchray_colab_tutorial">colab notebook</a></li> 
@@ -144,6 +145,66 @@
       </table>
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr onmouseout="splash_stop()" onmouseover="splash_start()">
+      <td width="25%">
+        <!--<div class="one">
+        <div class="two" id="tripod_image"><img src="media/tripod_2.png" width="160" height="160" alt="tripod"></div>
+        <img src="media/tripod_1.png" width="160" height="160" alt="tripod">-->
+        <div class="one">
+        <div class="two" id="splash_gif"><img src='media/splash.gif' width="160" height="160"></div>
+        <img src='media/normgrad_test.png' width="160" height="160">
+        </div>
+        <script type="text/javascript">
+        function splash_start() {
+        document.getElementById('splash_gif').style.opacity = "1";
+        }
+        function splash_stop() {
+        document.getElementById('splash_gif').style.opacity = "0";
+        }
+        splash_stop()
+        </script>
+
+        <!--<script type="text/javascript">
+        function tripod_start() {
+        document.getElementById('tripod_image').style.opacity = "1";
+        }
+        function tripod_stop() {
+        document.getElementById('tripod_image').style.opacity = "0";
+        }
+        tripod_stop()
+        </script>-->
+      </td>
+      <td valign="top" width="75%">
+            <a href="https://arxiv.org/abs/2004.02866">
+              <papertitle>There and Back Again: Revisiting Backpropagation Saliency Methods</papertitle>
+            </a>
+      <br>
+          <a href="https://www.robots.ox.ac.uk/~srebuffi/">Sylvestre-Alvise Rebuffi*</a>,
+          <strong>Ruth Fong*</strong>,
+          <a href="https://scholar.google.co.uk/citations?user=HQzOgKYAAAAJ&hl=en">Xu Ji*</a>, and
+          <a href="http://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>
+      <br>
+        <em>CVPR</em>, 2020 (to appear)
+      <br>
+        <a href="https://arxiv.org/abs/2004.02866">arxiv</a> | 
+        <a href="https://github.com/srebuffi/revisiting_saliency">code</a> | 
+        <a href="bib/RebuffiCVPR2020.bib" target="_blank">bibtex</a>
+        <div style="display: none;" id="cvpr20_bib">
+          <pre>
+@InProceedings{rebuffi_cvpr_2020,
+author = {Rebuffi, Sylvestre-Alvise and Fong, Ruth and Ji, Xu and Vedaldi, Andrea},
+title = {There and Back Again: Revisiting Backpropagation Saliency Methods},
+booktitle = {The IEEE Conference on Computer Vision 
+  and Pattern Recognition (CVPR)},
+year = {2020}
+}
+          </pre>
+        </div>
+        <p></p>
+        <p>We outline a novel framework that unifies many backpropagation saliency methods. Furthermore, we introduce NormGrad, a saliency method that considers the spatial contribution of the gradients of convolutional weights. We also systematically study the effects of combining saliency maps at different layers. Finally, we introduce a class-sensitivity metric and a meta-learning inspired technique that can be applied to any saliency method to improve class sensitivity.
+        </p>
+      </td>
+    </tr>
     <tr onmouseout="tripod_stop()" onmouseover="tripod_start()" bgcolor="#ffffd0">
       <td width="25%">
         <div class="one">
@@ -172,7 +233,8 @@
         <a href="http://ruthcfong.github.io/files/fong19_extremal_supps.pdf">supp</a> |
         <a href="http://ruthcfong.github.io/files/fong19_extremal_poster.pdf">poster</a> |
         <a href="https://github.com/facebookresearch/TorchRay">code (TorchRay)</a> | 
-        <a href="bib/FongVedaldiCVPR2018.bib" target="_blank">bibtex</a>
+        <!-- TODO(ruthfong): Fix bibtex hyperlink -->
+        <a href="bib/FongPatrickVedaldiICCV2019.bib" target="_blank">bibtex</a>
         <div style="display: none;" id="iccv19_bib">
           <pre>
 @InProceedings{fong_iccv_2019,
