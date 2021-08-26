@@ -192,21 +192,26 @@
     </tr>
 
 
-    <tr bgcolor="#ffffd0" ><!-- onmouseout="splash_stop()" onmouseover="splash_start()">-->
+    <tr bgcolor="#ffffd0" onmouseout="describability_stop()" onmouseover="describability_start()">
       <td width="25%">
-        <!--<div class="one">
-        <div class="two" id="splash_gif"><img src='media/splash.gif' width="160" height="160"></div>
-        <img src='media/normgrad_test.png' width="160" height="160">
+        <!--<img src="./media/describability_1.png" alt="describability metric diagram"  width="160">-->
+        <div class="one">
+        <div class="two" id="describability_two" style="display:table-cell; vertical-align:middle; text-align:center;">
+          <img src="./media/describability_2.png" alt="describability metric diagram"  width="140">
+        </div>
+        <img src="./media/describability_1.png" alt="describability metric diagram"  width="160" id="describability_one">
         </div>
         <script type="text/javascript">
-        function splash_start() {
-        document.getElementById('splash_gif').style.opacity = "1";
+        function describability_start() {
+        document.getElementById('describability_one').style.opacity = "0";
+        document.getElementById('describability_two').style.opacity = "1";
         }
-        function splash_stop() {
-        document.getElementById('splash_gif').style.opacity = "0";
+        function describability_stop() {
+        document.getElementById('describability_two').style.opacity = "0";
+        document.getElementById('describability_one').style.opacity = "1";
         }
-        splash_stop()
-        </script>-->
+        describability_stop();
+        </script>
       </td>
       <td valign="top" width="75%">
             <a href="https://arxiv.org/pdf/2010.14551.pdf">
@@ -230,21 +235,23 @@
     </tr>
 
 
-    <tr><!-- onmouseout="splash_stop()" onmouseover="splash_start()">-->
+    <tr onmouseout="debiasing_stop()" onmouseover="debiasing_start()">
       <td width="25%">
-        <!--<div class="one">
-        <div class="two" id="splash_gif"><img src='media/splash.gif' width="160" height="160"></div>
-        <img src='media/normgrad_test.png' width="160" height="160">
+        <div class="one">
+        <div class="two" id="debiasing_two">
+          <img src='media/debiasing_2.png' width="160">
+        </div>
+        <img src='media/debiasing_1.png' width="160">
         </div>
         <script type="text/javascript">
-        function splash_start() {
-        document.getElementById('splash_gif').style.opacity = "1";
+        function debiasing_start() {
+        document.getElementById('debiasing_two').style.opacity = "1";
         }
-        function splash_stop() {
-        document.getElementById('splash_gif').style.opacity = "0";
+        function debiasing_stop() {
+        document.getElementById('debiasing_two').style.opacity = "0";
         }
-        splash_stop()
-        </script>-->
+        debiasing_stop()
+        </script>
       </td>
       <td valign="top" width="75%">
             <a href="https://arxiv.org/pdf/2011.07453.pdf">
@@ -268,21 +275,21 @@
     </tr>
 
 
-    <tr><!-- onmouseout="splash_stop()" onmouseover="splash_start()">-->
+    <tr onmouseout="contextual_stop()" onmouseover="contextual_start()">
       <td width="25%">
-        <!--<div class="one">
-        <div class="two" id="splash_gif"><img src='media/splash.gif' width="160" height="160"></div>
-        <img src='media/normgrad_test.png' width="160" height="160">
+        <div class="one">
+        <div class="two" id="contextual_two"><img src='media/contextual_2.png' height="160"></div>
+        <img src='media/contextual_1.png' height="160">
         </div>
         <script type="text/javascript">
-        function splash_start() {
-        document.getElementById('splash_gif').style.opacity = "1";
+        function contextual_start() {
+        document.getElementById('contextual_two').style.opacity = "1";
         }
-        function splash_stop() {
-        document.getElementById('splash_gif').style.opacity = "0";
+        function contextual_stop() {
+        document.getElementById('contextual_two').style.opacity = "0";
         }
-        splash_stop()
-        </script>-->
+        contextual_stop()
+        </script>
       </td>
       <td valign="top" width="75%">
             <a href="https://openaccess.thecvf.com/content/ACCV2020/papers/Marcos_Contextual_Semantic_Interpretability_ACCV_2020_paper.pdf">
