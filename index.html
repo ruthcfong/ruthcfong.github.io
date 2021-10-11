@@ -151,6 +151,45 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+    <tr bgcolor="#ffffd0" onmouseout="sim_stop()" onmouseover="sim_start()">
+      <td width="25%">
+        <!--<img src="./media/gdt.png" alt="hierarchical transformations" width="160" height="160">-->
+        <div class="one">
+        <div class="two" id="sim_two" style="display:table-cell; vertical-align:middle; text-align:center;opacity:0;">
+          <img src="./media/interactive_sim_2.png" alt="interactive similarity example #2"  width="160">
+        </div>
+        <img src="./media/interactive_sim_1.png" alt="interactive similarity example #1"  width="160" id="sim_one">
+        </div>
+        <script type="text/javascript">
+        function sim_start() {
+        document.getElementById('sim_two').style.opacity = "1";
+        }
+        function sim_stop() {
+        document.getElementById('sim_two').style.opacity = "0";
+        }
+        splash_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <a href="https://ruthcfong.github.io/projects/interactive_sim/">
+          <papertitle>Interactive Similarity Overlays</papertitle>
+        </a>
+        <br>
+          <strong>Ruth Fong</strong>, 
+          <a href="https://znah.net/">Alexander Mordvintsev</a>, 
+          <a href="http://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>, 
+          <a href="https://colah.github.io/">Chris Olah</a>
+        <br>
+        <em>VISxAI Workshop</em>, 2021 (to appear)&nbsp; 
+        <br>
+        <a href="https://ruthcfong.github.io/projects/interactive_sim/">interactive article </a> | 
+        <a href="https://github.com/facebookresearch/GDT">code</a> | 
+        <a href="./bib/FongVISxAI20201.bib">bibtex</a>
+        <p>
+          We introduce a novel interactive visualization that allows machine learning practitioners and researchers to easily observe, explore, and compare how a neural network perceives different image regions.
+        </p>
+      </td>
+    </tr>
 
     <tr><!-- onmouseout="splash_stop()" onmouseover="splash_start()">-->
       <td width="25%">
@@ -791,20 +830,28 @@ year = {2019}
         <td width="25%"><img src="media/TooManyPigeons.jpg" alt="pigeons" width="160" height="160"></td>-->
         <td width="75%" valign="center">
         <p>
+          <a href="https://www.cs.princeton.edu/courses/archive/fall21/cos126/">
+          <papertitle>Princeton COS 126: Computer Science: An Interdisciplinary Approach &mdash; Fall 2021</papertitle>
+          </a>
+          <br>
+          <a href="https://www.cs.princeton.edu/courses/archive/fall21/cos126/">
+          <papertitle>Oxford Engineering B14: Image and Signal Analysis &mdash; Fall 2019</papertitle>
+          </a>
+          <br>          
           <a href="http://soe.rutgers.edu/new-jersey-governors-school-engineering-technology">
-          <papertitle>NJ Governor's School in Engineering & Technology: Mathematics in the World - Summer 2015</papertitle>
+          <papertitle>NJ Governor's School: Mathematics in the World &mdash; Summer 2015</papertitle>
           </a>
-          <br><br>
+          <br>
           <a href="https://lewis.seas.harvard.edu/pages/computer-science-121-and-csci-e-121-introduction-theory-computation">
-          <papertitle>Harvard CS121: Intro to Theory of Computation - Fall 2014</papertitle>
+          <papertitle>Harvard CS121: Intro to Theory of Computation &mdash; Fall 2014</papertitle>
           </a>
-          <br><br>
+          <br>
           <a href="https://www.seas.harvard.edu/courses/cs20/">
-          <papertitle>Harvard CS20: Intro to Discrete Math - Spring 2014</papertitle>
+          <papertitle>Harvard CS20: Intro to Discrete Math &mdash; Spring 2014</papertitle>
           </a>
-          <br><br>
+          <br>
           <a href="https://cs50.harvard.edu/">
-          <papertitle>Harvard CS50: Intro to CS I - Fall 2012</papertitle>
+          <papertitle>Harvard CS50: Intro to CS I &mdash; Fall 2012</papertitle>
           </a>
           <br>
         </p>
@@ -819,7 +866,7 @@ year = {2019}
           <font size="2">
           <a href="https://jonbarron.info/">This ubiquitous CS researcher website template spawned from here.</a>
           <br>
-          Last updated: August 2021
+          Last updated: October 2021
         </font>
         </p>
         </td>
