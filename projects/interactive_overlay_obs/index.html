@@ -196,6 +196,8 @@ figcaption {
         <b>Hover over different parts of the above images</b>.
         This interactive visualization shows how similar (or different) a neural network considers different image patches to the current image patch (highlighted in yellow).
         Try hovering over animal features (e.g., noses, eyes, faces) and background regions.
+        <br><br>
+        <i>This article is best viewed in Google Chrome.</i>
         <!--<div id="colab-multi" style="text-align: right;"></div>-->
       </figcaption>      
   </figure>
@@ -215,7 +217,7 @@ lots of work on visual interfaces~\cite{X}, black-box access~\cite{X}, pedogogic
 similar to work on self-similarity feature descriptors~\cite{X}
     -->
   <p>
-    In this work, we formalize <b>interactive similarity overlays</b> &mdash; an interactive visualization that highlights how a network "sees" different image patches as similar or different.
+    In this work, we formalize <b>interactive similarity overlays</b> &mdash; an interactive visualization that highlights how a convolutional neural network (CNN) "sees" different image patches as similar or different.
     Our method builds off of prior work on interactive visualizations for understanding CNNs<d-cite key="yosinski2015understanding,tensorflow2017neural,olah2018building,carter2019activation,hohman2020summit,hohman2020understanding"></d-cite><d-footnote>
       See <d-cite key="sacha2017you,hohman2018visual"></d-cite> for a survey of visualizations for machine learning and deep learning respectively.
     </d-footnote>
@@ -224,7 +226,7 @@ similar to work on self-similarity feature descriptors~\cite{X}
       In contrast, our work is an interactive visualization that can be used to explain the internal representation of any CNN model.
     </d-footnote>
     and self-similarity image descriptors<d-cite key="shechtman2007matching,deselaers2010global,seo2009static,vedaldi2009multiple"></d-cite>.
-    We also demonstrate how similarity overlays can be combined with other visualization techniques, such as non-negative matrix factorization and interactive charts, to more richly explore the learned representations of convolutional neural networks (CNNs).
+    We also demonstrate how similarity overlays can be combined with other visualization techniques, such as non-negative matrix factorization<d-cite key="olah2018building"></d-cite> and interactive charts<d-cite key="victor2011"></d-cite>, to more richly explore the learned representations of CNNs.
     <!--In contrast to prior work on visual interfaces~\cite{X}, black-box interpretability~\cite{X}, ;-->
     We design our similarity overlays so that they can be easily extended or dropped into the existing workflow of a machine learning researcher.<!-- in a plug-and-play fashion.-->
     <!--<d-footnote>
