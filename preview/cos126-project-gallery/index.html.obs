@@ -1,0 +1,1724 @@
+<head>
+  <title>COS126 Final Project Gallery - Fall 2021</title>
+</head>
+<body>
+<h1>COS126 Final Project Gallery - Fall 2021</h1>
+<h3>Dr. Ruth Fong, last updated Jan 2022</h3>
+<p>This is a prototype for the COS126 final project gallery and contains short descriptions and videos demonstrating projects implemented for the Fall 2021 iteration of COS126. This gallery only includes the subset of projects for which the project members consented to having their project publically included in this gallery.
+</p>
+<table>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=kL8sDDcdTmg">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/kL8sDDcdTmg/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=kL8sDDcdTmg">Maze Hero</a> by David F. Chang and Andrew Ji
+      <p>
+        Our project was to create a maze game where a user controls a sprite to complete mazes.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/08d666528c3a40cdb79fe5f97f3881c2">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/08d666528c3a40cdb79fe5f97f3881c2-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/08d666528c3a40cdb79fe5f97f3881c2">Life at Princeton 2021</a> by Anlin Kopf and Maria Aguirre
+      <p>
+        The player must go through scenarios of their time at Princeton and make choices to try to make it through the semester.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=vmO9FeUHBlQ">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/vmO9FeUHBlQ/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=vmO9FeUHBlQ">What is the Poker Hand? </a> by Weilyn A. Chong and Jason Gu 
+      <p>
+        A poker hand card recognizer and frequency of hand type analysis
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=vmO9FeUHBlQ">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/vmO9FeUHBlQ/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=vmO9FeUHBlQ">What's the Poker Hand?</a> by Jason Gu and Weilyn Chong
+      <p>
+        A program that recognizes poker hands and calculates statistics based on a data set of poker hands.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/2di735bs_7Y">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/2di735bs_7Y/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/2di735bs_7Y">Snake</a> by Aya Eyceoz
+      <p>
+        This project implements the basic rules and creates a fully-functioning form of the game Snake.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/7TOjw6HJocw">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/7TOjw6HJocw/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/7TOjw6HJocw">Table Top Cards Simulator</a> by Jack L. Toubes and Christian Arnold
+      <p>
+        A tabletop card game simulator for up to 4 players over LAN where they can play any card game they would like.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/8e50518fed7e41c5881d60f24f6277e5">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/8e50518fed7e41c5881d60f24f6277e5-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/8e50518fed7e41c5881d60f24f6277e5">Stress Simulator</a> by Meghan M. Harrington and Hannah Even
+      <p>
+        Our project simulates the impact of a point force on a beam through a color gradient of stress.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/7TOjw6HJocw">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/7TOjw6HJocw/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/7TOjw6HJocw">Table Top Cards Simulator</a> by Christian T. Arnold and Jack Toubes
+      <p>
+        A tabletop card game for up to four players; the host can control 
+the game with a few rules such as moving cards, flipping cards, 
+and can set win conditions.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/0bbce78d9b06445ab03fa9d82584c2fd">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/0bbce78d9b06445ab03fa9d82584c2fd-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/0bbce78d9b06445ab03fa9d82584c2fd">Graphically Visualizing the Correlation between Director Gender and Bechdel Test Pass Rate</a> by Lani Phan and Gianna Renzo
+      <p>
+        This project will compute the relation between director gender and a movie’s passing or failing of the Bechdel Test and generate a simple graph showing the correlation between the two variables.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/c1IhFF7a074">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/c1IhFF7a074/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/c1IhFF7a074">Princeton Survival Manual </a> by Cherie Nicharee Jiraphanphong and Icey Siyi Ai 
+      <p>
+        Users use "a" to shift the character left and "d" to shift the character right, controlling the bullet emission in order to eliminate the randomly dropping task files from the top of the screen.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+    <td>
+      <a href="https://drive.google.com/file/d/1vXiq_ph9ZY-1FUzrqSeBisJucd2cRtCJ/view?usp=sharing">2048 Game</a> by Kevin Zhang and Kurt Lemai-Nguyen
+      <p>
+        Implements the game 2048 on terminal window
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/F6tqZSLJMoI">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/F6tqZSLJMoI/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/F6tqZSLJMoI">Don't Leave Me Hanging!</a> by Weston L. Carpenter and Tommy
+      <p>
+        Our project is a virtual game of Hangman that is displayed on screen and allows for multiplayer use.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/a55ab6c8bd324e6f8ad5631c9fb72acc">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/a55ab6c8bd324e6f8ad5631c9fb72acc-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/a55ab6c8bd324e6f8ad5631c9fb72acc">IndexPortfolio</a> by Axel Johansson
+      <p>
+        My program collects historical data of close prices of NASDAQ stocks, simulate different portfolio strategies on this data, and compute statistics and plots how the market value evolves.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/43862d08dedf4d50b56bed1d9b6aa2e0">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/43862d08dedf4d50b56bed1d9b6aa2e0-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/43862d08dedf4d50b56bed1d9b6aa2e0">Arcade Machine</a> by Owais Ibrahim and Uzair Malik
+      <p>
+        Arcade Study Break is a virtual arcade machine that allows the user to play the Snake Game for a quick study break whenever their heart desires!
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/NwyQ65cFWKI">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/NwyQ65cFWKI/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/NwyQ65cFWKI">Pong</a> by Gordon K. Lam and Thomas Rosini
+      <p>
+        Multiplayer or single player Pong
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/77f6e95d14a44248a77236c31dedfab6">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/77f6e95d14a44248a77236c31dedfab6-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/77f6e95d14a44248a77236c31dedfab6">Checkers</a> by Mufid Rahman and Anass Mountasser
+      <p>
+        Allows two users to play a game of checkers.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/85452e5d2c824a21963c3ade38e14070">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/85452e5d2c824a21963c3ade38e14070-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/85452e5d2c824a21963c3ade38e14070">Pokemon Battle Simulator</a> by Aaron Dantzler and Eric Jung
+      <p>
+        Our project simulates a Pokemon battle, taking input from the user for moves and outputting the damage to terminal and StdDraw.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/3c9d90ccaa204426941a86cb02a2f3c6">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/3c9d90ccaa204426941a86cb02a2f3c6-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/3c9d90ccaa204426941a86cb02a2f3c6">Cellular Automata</a> by Oliver Shu and Wilbert Joseph
+      <p>
+        Our project implements a cellular automata with two or three states and all the possible survival rules, and a GUI allowing you to pause the animation, reset the pattern to its initial state, and change the status of cells by mouse click.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/484d6f1aab0542b694c7e873c615907d?sharedAppSource=personal_library">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/484d6f1aab0542b694c7e873c615907d?sharedAppSource=personal_library-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/484d6f1aab0542b694c7e873c615907d?sharedAppSource=personal_library">Flappy Birds</a> by Emeline B. Blohm and Isabella Checa
+      <p>
+        A game where the user controls the height of a bird by clicking their mouse, in order to avoid pillar obstacles. If the bird crashes into a pillar, the game ends and the player is told how many pillars they successfully traveled through.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/4efed66c8f724b67a6640db9efb06aff">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/4efed66c8f724b67a6640db9efb06aff-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/4efed66c8f724b67a6640db9efb06aff">Connect4</a> by Sophia Chang and Leena Memon
+      <p>
+        A game of Connect4 with randomly generated sized game board.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=B9AwU-QLOow">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/B9AwU-QLOow/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=B9AwU-QLOow">StockTweet</a> by Danielle R. Shapiro and jonathan mindel
+      <p>
+        StockTweet is a Java object that takes a stock as input and outputs a comparison of its twitter activity and actual activity between the dates of April 9, 2020 to July 16th, 2020.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/67502986ba4d49a09300ca2fb6f54e1b">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/67502986ba4d49a09300ca2fb6f54e1b-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/67502986ba4d49a09300ca2fb6f54e1b">CrossWorder</a> by Keller J. Maloney
+      <p>
+        Interface to solve pre-loaded crosswords digitally.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/2ca06670e2ac46c7848ea0232adb9295">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/2ca06670e2ac46c7848ea0232adb9295-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/2ca06670e2ac46c7848ea0232adb9295">Maze</a> by Takemasa Saguchi
+      <p>
+        Creates and Solves a maze
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/be32e200bbe34b84a5aecd151fddcfdc">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/be32e200bbe34b84a5aecd151fddcfdc-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/be32e200bbe34b84a5aecd151fddcfdc">Space Shooters</a> by Nguyen S Nguyen and Ben Cai
+      <p>
+        It is a game where the user controls a space ship and shoots an enemy.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/55f9b5977f7d4509a5a4c1f8fa1b6b76">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/55f9b5977f7d4509a5a4c1f8fa1b6b76-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/55f9b5977f7d4509a5a4c1f8fa1b6b76">NBA Injury Tracker</a> by Isaac M. Cape and Brandon Cheng
+      <p>
+        Our project simulates the act of placing bets according to spread changes that result from injuries sustained to players as reported on a specific Twitter page.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/6L05NV3IvcU">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/6L05NV3IvcU/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/6L05NV3IvcU">Rhythmix</a> by Anlon Zhu and Helen Zhao
+      <p>
+        We created a fun rhythm game similar to Guitar Hero that lets the user interact with a GUI.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/T_eWQMLxQzk">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/T_eWQMLxQzk/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/T_eWQMLxQzk">Snake</a> by Javier A. Linero-Quintana and Deniz
+      <p>
+        Recreated retro game of snake going around in a grid and eating apples to increase in size using keyboard inputs.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/93736f1f557d48c59e50cc066ebe9db2 ">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/93736f1f557d48c59e50cc066ebe9db2 -with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/93736f1f557d48c59e50cc066ebe9db2 ">Spotify Data Analysis</a> by Milica Maricic and Alison Silldorff
+      <p>
+        Our project analyzes a user's Spotify data history to determine their most listened to artist, output a visual representation of their data, and assign them to a Harry Potter house.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/e71deeac5d724c4bbb9d5cc25f215f20">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/e71deeac5d724c4bbb9d5cc25f215f20-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/e71deeac5d724c4bbb9d5cc25f215f20">Tuner</a> by Shana A. Chen and Soonyoung Kwon
+      <p>
+        Our project is a tuner that comes with two functions: a note tuner and a note player, of which the tuner tells the user whether a note from a .wav file is in tune or out of tune, and the note player plays an in-tune note of the user's choosing.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/0d928e472e0843c893495aa7ba380dfe">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/0d928e472e0843c893495aa7ba380dfe-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/0d928e472e0843c893495aa7ba380dfe">CasinoNight</a> by William Z. Yang and Tyler Vu
+      <p>
+        CasinoNight implements the game of BlackJack for a fun night of casino entertainment!
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/a9b320fbd16546c793946dc5ada3deb3">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/a9b320fbd16546c793946dc5ada3deb3-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/a9b320fbd16546c793946dc5ada3deb3">How old do you have to be read?</a> by Avi Chesler and Ben Knell
+      <p>
+        Our program computes data on book borrowing and subscription frequency at the Shakespeare Lending Library (or any other library) , by age.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/a26a57ec47ae4456840fc1cca3d4ab5b?sharedAppSource=personal_library">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/a26a57ec47ae4456840fc1cca3d4ab5b?sharedAppSource=personal_library-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/a26a57ec47ae4456840fc1cca3d4ab5b?sharedAppSource=personal_library">Spelling Bee</a> by Kaan B. Odabas and Harit Raghunathan
+      <p>
+        Our project implements a desktop version of the New York Times Spelling
+Bee Game—the player tries to guess an anagram of seven random letters.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/hwK7WQpVnjE">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/hwK7WQpVnjE/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/hwK7WQpVnjE">Bubble Trouble Reloaded</a> by Nicholas M. Hope and Ryan Hoffman
+      <p>
+        Game with up to 3 players in which each player controls a hero which must avoid bouncing bubbles while popping them with a projectile for as long as possible.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/090VFay1RH8">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/090VFay1RH8/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/090VFay1RH8">Poem Builder</a> by Lara Katz
+      <p>
+        This project assists a user in writing haikus by providing statistically likely words generated by an Extended Markov Model based on a chosen text data set.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/302c22edd63e4e6d9b9c890da335f3a0">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/302c22edd63e4e6d9b9c890da335f3a0-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/302c22edd63e4e6d9b9c890da335f3a0">Bechdel Movie Classifier</a> by Alexis J. Wu and Joy Patterson
+      <p>
+        Our program is a classifier designed to determine whether or not movies will
+pass the Bechdel Test.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/40c092d340384662859ba037f2b9d894">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/40c092d340384662859ba037f2b9d894-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/40c092d340384662859ba037f2b9d894">TicTacToeNxN</a> by Justin S. Lim and Andrew Do
+      <p>
+        We created a TicTacToe game of size N for the user to play against the computer.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/912bf491393649a5a9117fb5cbf41011">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/912bf491393649a5a9117fb5cbf41011-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/912bf491393649a5a9117fb5cbf41011">Tetris Game</a> by Angela M. De Santis and Max Gonzalez Saez-Diez
+      <p>
+        We created an interactive Tetris game where the user can move the objects right, left, or rotate them; a point is scored if a line is filled, and once a line is filled it gets deleted and the design shifts down plus the speed of the game increases to make it harder.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/d66861ec30a042d7882ef68220445488">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/d66861ec30a042d7882ef68220445488-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/d66861ec30a042d7882ef68220445488">Pong Game</a> by Lauren K. Harris and Gail Samuel
+      <p>
+        A two-player game of pong, in which players can control a paddle and attempt to stop the ball from going off the screen.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/f84213ecac1d40adbc3611058268a5fb">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/f84213ecac1d40adbc3611058268a5fb-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/f84213ecac1d40adbc3611058268a5fb">Saving Boromir</a> by Daniel Ju and Xiao-ke Lu
+      <p>
+        The player controls a moving sword to deflect arrows from reaching Boromir.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/38b4cfa92eb64138b7a097634bc1465e">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/38b4cfa92eb64138b7a097634bc1465e-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/38b4cfa92eb64138b7a097634bc1465e">Mancala</a> by Zoe A. Mermin and Katie Heller
+      <p>
+        Our project is to implement the board game mancala to be played by two players.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/bBmu-P56sU4">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/bBmu-P56sU4/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/bBmu-P56sU4">Battleship</a> by Avery Woolbert
+      <p>
+        My project implements the two-player game of Battleship using a graphical user interface, and can be played between two human players, a human player and an AI player, or two AI players.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/Xl7Y3cjnbuU">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/Xl7Y3cjnbuU/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/Xl7Y3cjnbuU">GuitarHeroPRO</a> by Timur Gubskiy and Kevin Go
+      <p>
+        A remake of the guitar hero game using the Karplus-Strong Algorithm to 
+synthesize guitar sounds.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/1ced66b8fb08428e91348c8fb60ef8af">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/1ced66b8fb08428e91348c8fb60ef8af-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/1ced66b8fb08428e91348c8fb60ef8af">Analyzing 2014-2015 New York City Public School SAT Score Data</a> by Kathryn Postiglione and Gillian Rosenberg
+      <p>
+        Our program is a data visualizer and analyzer for the NYC public school SAT score data from 2014-2015.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/a428d244e772430ebd3caf9e70a30359">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/a428d244e772430ebd3caf9e70a30359-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/a428d244e772430ebd3caf9e70a30359">Conveying emotions through lyrics: Olivia Rodrigo and her songs</a> by Farah Azmi and Tecla Mafa
+      <p>
+        A program that determines how angry or sad a song is.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=1BZ2qtevb2g">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/1BZ2qtevb2g/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=1BZ2qtevb2g">Gravity</a> by Abani Ahmed and Alecia Barbieri
+      <p>
+        A study game where the user has to type out a matching term to a falling rock displaying a definition.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=oHsVRAw0Jww">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/oHsVRAw0Jww/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=oHsVRAw0Jww">Physics Helper</a> by Hyaline Chen
+      <p>
+        Barnes Hut gravitational simulator & Harmonic Oscillator Simulator and interactive graph plotter
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=v_K9_PfsRzw">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/v_K9_PfsRzw/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=v_K9_PfsRzw">Lab Report Generator</a> by India Behl and Reese Owen
+      <p>
+        The purpose of our project is to facilitate the production of pieces of a generic laboratory report, including a data table, scatterplot (with linear line of best and R^2), histogram, and outline.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=9BgzGA4Jtt4">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/9BgzGA4Jtt4/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=9BgzGA4Jtt4">Flaming Hot Chemistry</a> by Jacqueline A. Wang and Tara Agarwal
+      <p>
+        We are demonstrating a flame test lab simulation using emission spectra and data provided by a teacher.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/TcTOPk4UTj8">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/TcTOPk4UTj8/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/TcTOPk4UTj8">Battleship</a> by Donna Wang and Ankhitha Manjunatha
+      <p>
+        Our project simulates a battleship game, where players will choose the square
+of the sea that they want to aim each round until all the ships in the sea 
+have been hit and uncovered.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/prycPWkQH5k">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/prycPWkQH5k/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/prycPWkQH5k">Financial Advice with Stock Visualization</a> by Christian Lalin and Ayanava Ganguly
+      <p>
+        We take in stock data defined by the user, then use the data in different methods to calculate a series of technical indicators, which help us inform our user if we advise investment in the stock, and finally we graph the indicators and stock prices to help our users visualize trends.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/76ba39a91ab84647943606796294b6f4">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/76ba39a91ab84647943606796294b6f4-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/76ba39a91ab84647943606796294b6f4">Artist Prediction Machine</a> by Connor C. Nisbet and Ilay Furman
+      <p>
+        From a unknown song, match it to the artist in our catalog that its' lyrics resemble most closely
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/c2GcPsfPunE">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/c2GcPsfPunE/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/c2GcPsfPunE">Mapping the Carceral Landscape of New Jersey: A Call for Abolition</a> by Akhila Bandlora and Amber Rahman
+      <p>
+        The purpose of our project is twofold: 1) to emphasize that correctional facilities in NJ and the violence they inflict is a material reality that’s happening close to them through highlighting the proximity of carceral facilities and 2) to engage our audience in a critical evaluation of what’s happening in the different types of carceral facilities around them (juvenile detention, ICE detention, state, federal, private, local prisons) and what action steps they can take.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/69f70c198c94493abd48a08c3e68a7a4">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/69f70c198c94493abd48a08c3e68a7a4-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/69f70c198c94493abd48a08c3e68a7a4">Othello</a> by Berkley Yiu and Athena Jamurta
+      <p>
+        Implementation of Othello strategy board game
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/a295cd18ea0140b08003d9b9ad2f4ad0">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/a295cd18ea0140b08003d9b9ad2f4ad0-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/a295cd18ea0140b08003d9b9ad2f4ad0">CarbonCalculator</a> by Sam D. Miller
+      <p>
+        Based off of a user's input of activities, it calculates the emissions generated.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/c7c3311c08ae4142a7a35cad3aeb57fa">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/c7c3311c08ae4142a7a35cad3aeb57fa-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/c7c3311c08ae4142a7a35cad3aeb57fa">PingPongDeluxe</a> by Charles Nelson Sinarya and Kok Wei Pua
+      <p>
+        Our project is an arcade PingPong game that consist of a ball and paddles that supports 2 or 4 players.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/aeeebe67878c4803bdfac05d1d4d5c22">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/aeeebe67878c4803bdfac05d1d4d5c22-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/aeeebe67878c4803bdfac05d1d4d5c22">BrickBreaker</a> by Clara Toujas-Bernate and Jacob Santelli
+      <p>
+        Implements a BrickBreaker game where the user aims a moving ball with a platform at the bottom of the screen at bricks to try to break them.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/a6567c3c0e734ddbb0953402e47d715c">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/a6567c3c0e734ddbb0953402e47d715c-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/a6567c3c0e734ddbb0953402e47d715c">EMS Prioritization & Visualization</a> by https://www.loom.com/share/2ba25389410a4dffad4196f0c0192bbe
+      <p>
+        I obtained a dataset of info from 911 calls for Montgomery County, PA, and created a software that determines the priority of the call based on the type of medical emergency reported, provides an ambulance crew with a determination of which call they must respond to 'next' based on call priority & proximity to their current location, and also plots the calls and the EMS unit's current location on a map of Montgomery County in Standard Draw.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/GcXbgXLHJew">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/GcXbgXLHJew/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/GcXbgXLHJew">Algorithmic Trading Bot</a> by Sam Chiang and Jason Le
+      <p>
+        This program inputs stock price data to produce a stock chart containing candlesticks, which reflect appropriate stock prices on a day-by-day basis, two simple moving average trend lines, and circles to indicate crossovers between the two simple moving average trend lines.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/d200081fe65544c0b61d5ba0343b6984">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/d200081fe65544c0b61d5ba0343b6984-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/d200081fe65544c0b61d5ba0343b6984">MadLib</a> by Harrison M. Roberts
+      <p>
+        Creative a MadLib game in which the user provides nouns and adjectives using the terminal.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/cd861c9bd5414f98ad5c86faf16ddf5a">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/cd861c9bd5414f98ad5c86faf16ddf5a-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/cd861c9bd5414f98ad5c86faf16ddf5a">MarkovModel for Pictures</a> by Chien V. Nguyen and Aline Utetiwabo
+      <p>
+        This project extends on the MarkovModel assignment and apply it on pictures.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/rhaay8MvtJs">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/rhaay8MvtJs/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/rhaay8MvtJs">Bitcoin Tweet Sentiment Predictor</a> by Caiden B. Kiani and George Chiriac
+      <p>
+        A sentiment analysis machine learning model that is trained on a bitcoin tweet dataset.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/7bbfe95d1e9f434eb6000046516bad1e">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/7bbfe95d1e9f434eb6000046516bad1e-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/7bbfe95d1e9f434eb6000046516bad1e">Scrabble</a> by Emilio Chan and Ashley Olenkiewicz
+      <p>
+        We made a text-based version of the game Scrabble where four players on the same computer take turns putting letters onto a board and getting points for said letters.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/UQinm5ytaGc">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/UQinm5ytaGc/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/UQinm5ytaGc">Okey Game</a> by Taylan O. Aydin and Yavuz Gonen
+      <p>
+        We implemented the Turkish game "Okey" in two versions, one where 4 CPU players play against each other with a novel algorithm to group their pieces in the best way possible, and a second one where a human player can play against 3 other CPU players with text-based commands.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/3122b97eec0f43f6bccb131fc3b9cdf0">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/3122b97eec0f43f6bccb131fc3b9cdf0-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/3122b97eec0f43f6bccb131fc3b9cdf0">Automated Marine Mammal Classifier (AMMC)</a> by Mila Bileska and Yi Jin Toh 
+      <p>
+        Our project, Automated Marine Mammal Classifier (AMMC) implements 
+the Perceptron machine learning algorithm to differentiate between 
+two different dolphin species based on pre-existing training data while having an interactive interface.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/d98d8551543a49ebb8f363b1505fed51">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/d98d8551543a49ebb8f363b1505fed51-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/d98d8551543a49ebb8f363b1505fed51">Sudoku</a> by Matthew B. Drapkin and Skyla Qian
+      <p>
+        Our project is a classic Sudoku game that provides the user with a random Sudoku board, allows for inserting values into different coordinates, and allows the user to delete previous moves as they progress through the game.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/e474fa5e50fd44378208af8116dc71cc">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/e474fa5e50fd44378208af8116dc71cc-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/e474fa5e50fd44378208af8116dc71cc">Tiger Tear</a> by Greta I. Herrington
+      <p>
+        I designed the visuals and implemented a single player game featuring a running tiger, who must jump and duck to avoid obstacles.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/8dc72c82295e41b2a51584aed89d7437">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/8dc72c82295e41b2a51584aed89d7437-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/8dc72c82295e41b2a51584aed89d7437">Slither.io</a> by Mihika Ramprasad and Emmett Grover
+      <p>
+        A java-implementation of the slither.io game.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/28e1421d622842c989174de83f68e6db">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/28e1421d622842c989174de83f68e6db-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/28e1421d622842c989174de83f68e6db">Mapping Geography of Endangered Languages</a> by Chythanya Murali
+      <p>
+        The program will output a customizable geographic map of where different languages remain
+endangered.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/PrEkV5wwt1s">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/PrEkV5wwt1s/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/PrEkV5wwt1s">Chess</a> by Omkar Abhyankar
+      <p>
+        Two player chess game without the rules of castle-king-side, pawn promotion.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/AuDtPAWLISI">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/AuDtPAWLISI/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/AuDtPAWLISI">Tiger To-do</a> by Suhani Balachandran and James Richardson
+      <p>
+        A Princeton-specific academic planning application that automatically organizes all your assignments and any academic Princeton-wide events that are specific to you, to improve your academic preparedness and minimize stress.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/123880c810cd4c7baab5c462dc19ac2f">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/123880c810cd4c7baab5c462dc19ac2f-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/123880c810cd4c7baab5c462dc19ac2f">MadLib</a> by Harrison Roberts
+      <p>
+        A MadLib game where the user inserts their own nouns/adjectives into an original passage to create a custom story.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/8fb619d4bf084abe8cc51763663e7213">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/8fb619d4bf084abe8cc51763663e7213-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/8fb619d4bf084abe8cc51763663e7213">The Endangered Languages of the World</a> by Christian A. Garcia-De La Jara and James Zhang
+      <p>
+        Our project is a visual implementation of endangered language data from the Endangered Language Project database using user commands for functions and filters.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="//www.loom.com/share/69f70c198c94493abd48a08c3e68a7a4">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails///www.loom.com/share/69f70c198c94493abd48a08c3e68a7a4-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="//www.loom.com/share/69f70c198c94493abd48a08c3e68a7a4">Othello</a> by Athena M. Jamurta and Berkley Yiu
+      <p>
+        Implementation of strategy board game othello
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/2d78da2fa77f4da484c1fa3a55de1ec8">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/2d78da2fa77f4da484c1fa3a55de1ec8-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/2d78da2fa77f4da484c1fa3a55de1ec8">Endangered Language Project Visualizer</a> by Leo F. Rupp-Coppi
+      <p>
+        Allows user to search, write to, and visualize endangered language database
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/f0c446b09f8145608b2b4c492a5e674a">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/f0c446b09f8145608b2b4c492a5e674a-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/f0c446b09f8145608b2b4c492a5e674a">BlackJack Simulator with Probability display</a> by Ben Harrington and Chris Thomas
+      <p>
+        Playable BlackJack game that shows you updated probabilities
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/8dfcc8637ac34babbbebaf8b21a23f13">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/8dfcc8637ac34babbbebaf8b21a23f13-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/8dfcc8637ac34babbbebaf8b21a23f13">Hangul Classifier</a> by Audrey Yang and Joshua Yang
+      <p>
+        Hangul Classifier is an extension of classifier assignment which classifies Korean language Hangul characters (syllable blocks) into text.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=04KaBNcEPrw">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/04KaBNcEPrw/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=04KaBNcEPrw">Determining Absurdity</a> by Michelle W. Liu and Lillian Ye
+      <p>
+        Our project is a game that allows users to guess whether news headlines are real or satirical (i.e. from The Onion) and runs analyses on what words are more likely to result in correct/incorrect guesses.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/wz86mlWkp2Q">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/wz86mlWkp2Q/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/wz86mlWkp2Q">SPIA Fall</a> by Aviva Schwarz and Helena Frudit
+      <p>
+        A Princeton-ified version of the game SpyFall, intended to be played by 6 people on one device.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/925b354199904aea9cee15d5986497b8">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/925b354199904aea9cee15d5986497b8-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/925b354199904aea9cee15d5986497b8">Financial Modeling</a> by Isabelle G Casimir and Leila Grant
+      <p>
+        Produces a graph representing trends in certain stock and predicts how much money you would have at the end of period of time
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/297f1fe5a68d43ed976b37dc1b4a0ae6">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/297f1fe5a68d43ed976b37dc1b4a0ae6-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/297f1fe5a68d43ed976b37dc1b4a0ae6">Evil Hangman</a> by Guanyi Cao
+      <p>
+        Instead of a predetermined word, Evil Hangman seeks to cheat the user
+by determining the word based on the user's guesses.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/PZHQuXPNcoQ">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/PZHQuXPNcoQ/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/PZHQuXPNcoQ">Chess Visualizer</a> by Sijbren M. Kramer
+      <p>
+        Takes modified algebraic chess notation, checks for legal chess moves and prints out a 2D representation of each move.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/7b24a6d7f36d446c9cd74d2ce48b898b">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/7b24a6d7f36d446c9cd74d2ce48b898b-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/7b24a6d7f36d446c9cd74d2ce48b898b">Generative Art Using a Markov Model</a> by Sophia Grace Capili and Vivian Chen
+      <p>
+        This project aims to create various adaptations/versions of existing album
+covers and pieces of artwork using a Markov model.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/gj2KznukrCY">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/gj2KznukrCY/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/gj2KznukrCY">Connect 4</a> by Erin Lee and Aidan Phillips
+      <p>
+        Our project is a Connect 4 with a GUI with two modes of gameplay: one-player, where the user faces off against an AI, and two-player, where two users alternate playing in real time.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/_j4yKKxNnd0">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/_j4yKKxNnd0/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/_j4yKKxNnd0">Diamond Cutter, A SHA-256 Hash Cracker</a> by Luc Harbers
+      <p>
+        My program attempts to recover the plaintext used to create unsalted SHA-256 password hashes by through dictionary and bruteforce attacks.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/xZvZfyAh5Is">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/xZvZfyAh5Is/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/xZvZfyAh5Is">To The Moon</a> by Chase N. Magnano and Thomas Larson
+      <p>
+        A sprite controlled by arrow keys moves left and right to navigate up ledges that appear randomly.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/71f5b373c41a43cfb0755e64eddd7c55?sharedAppSource=personal_library">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/71f5b373c41a43cfb0755e64eddd7c55?sharedAppSource=personal_library-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/71f5b373c41a43cfb0755e64eddd7c55?sharedAppSource=personal_library">Analyzing Endangered Languages in the US</a> by Cecilia A. Quirk
+      <p>
+        This project  uses the data set from the Center for Digital
+Humanities' Endangered Language Project. It filters the data for languages
+in the US, plots the coordinates of the endangered languages on a map
+of the US, and generates a bar graph representing how many languages in
+the US fall into the endangered, vulnerable, threatened, dormant, and awakening
+categories.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=lftXo12c6Yc">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/lftXo12c6Yc/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=lftXo12c6Yc">BobaSort</a> by Willow Yang and Zayvinn Lin
+      <p>
+        This project follows the same guidelines as the popular water color sort
+puzzle game, however, with the twist being a set of boba pearls at the
+bottom of each drink cup that must stay at the bottom.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://loom.com/share/419027ac920f4ed6b97d45581d455c99">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/https://loom.com/share/419027ac920f4ed6b97d45581d455c99-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://loom.com/share/419027ac920f4ed6b97d45581d455c99">Super COS Girls </a> by Grace S. Oh and Krishna Parikh 
+      <p>
+        It's a fun, interactive game where the character runs and jumps throughout a moving Princeton campus background while trying to get as many coins as they can to increase their score.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/a293a3c89d2b4b8ebe00239a3fcae9b5">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/a293a3c89d2b4b8ebe00239a3fcae9b5-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/a293a3c89d2b4b8ebe00239a3fcae9b5">Song Generator</a> by Shlomo T. Fortgang and Estelle Botton
+      <p>
+        Our project allows the user to choose two of Taylor Swift's song to create a
+new song from, the instrument, and the speed on which to play the new song, and then plays the new song.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/0wgL3sabFug">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/0wgL3sabFug/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/0wgL3sabFug">The Bechdel test</a> by Sarah Lekaj and Meera
+      <p>
+        This project analyzed and calculated data on movies that passed the Bechdel Test and visualizes it into graphs
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/EKU07ZJaccg">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/EKU07ZJaccg/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/EKU07ZJaccg">In What Book Universe Would You Live?</a> by Evelyn McGonigle and Adam Littman Davis
+      <p>
+        We processed data from four books (with respect to specific categories) and created a BuzzFeed-style quiz based on those data.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/fa8b4677107a423f8dcc3120fd9aafbf">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/fa8b4677107a423f8dcc3120fd9aafbf-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/fa8b4677107a423f8dcc3120fd9aafbf">MarkovModel for Pictures</a> by Chien Nguyen and Aline Utetiwabo
+      <p>
+        This project extends on the MarkovModel assignment and apply it on pictures.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/ppf3GzB6JiQ">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/ppf3GzB6JiQ/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/ppf3GzB6JiQ">Brickbreaker!</a> by Christopher R. Caligiuri and Richard Gomez
+      <p>
+        This project is a recreation of the the game BrickBreaker, where the user is tasked
+with controlling a moving platform and attempt to break all the bricks on the game board via a moving ball.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/b3e9bb4f58924f2aadc7724ce9fcabe8">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/b3e9bb4f58924f2aadc7724ce9fcabe8-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/b3e9bb4f58924f2aadc7724ce9fcabe8">PerceptronPro</a> by Andrew D. Webb and Abdur-Raheem Idowu
+      <p>
+        Improved version of Perceptron with more features.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/rX5HrCv2Cwg">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/rX5HrCv2Cwg/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/rX5HrCv2Cwg">Multi-engine antivirus terminal program</a> by Boaz Yoo
+      <p>
+        Terminal antivirus program that scans a file passed in as a command line argument across numerous antivirus engines available on VirusTotal.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/46395642ca02421da4521d7a940f827e">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/46395642ca02421da4521d7a940f827e-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/46395642ca02421da4521d7a940f827e">Sokoban</a> by Carlos J. Cortez and Campbell Godfrey
+      <p>
+        Sokoban is a puzzle game in which the player pushes boxes or crates around in a grid, trying to get them to their final location without getting stuck.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/35N2DeP_C7A">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/35N2DeP_C7A/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/35N2DeP_C7A">Snake</a> by Alexandra Jerdee and Erin Chang
+      <p>
+        For our project, we decided to recreate the game Snake by accepting keyboard input and outputting our display through StdDraw.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/yBQZwBdq9b8">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/yBQZwBdq9b8/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/yBQZwBdq9b8">Stock Analyser App</a> by Saarthak Chaturvedi and Roy Mazumder
+      <p>
+        It is a desktop app made using JavaSwing that shows the statistics and graphs of a list of stocks and can help estimate earnings.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/c28aec8a922b4548a16571cbee93ab50">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/c28aec8a922b4548a16571cbee93ab50-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/c28aec8a922b4548a16571cbee93ab50">Graphing Calculator</a> by Merritt H. Zhang and Sam Sanft
+      <p>
+        Accepts user input of a polynomial function and uses the marching squares algorithm to plot it in a 2D plane.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/lozVnNRT4cM ">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/lozVnNRT4cM /mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/lozVnNRT4cM ">The Game of Life</a> by Luke F. Martin and Clay Reiferson
+      <p>
+        A programmed simulation of Conway's Game of Life
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/55fce455edc24048aa7e66193cecc9b1?sharedAppSource=personal_library">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/55fce455edc24048aa7e66193cecc9b1?sharedAppSource=personal_library-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/55fce455edc24048aa7e66193cecc9b1?sharedAppSource=personal_library">Stock Visualization and Analysis</a> by Adityasai V. Palaparthi
+      <p>
+        Graphing .csv stock data as a candlestick chart and then building and graphing trend lines of the stock data by constructing financial indicators.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/c28aec8a922b4548a16571cbee93ab50">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/c28aec8a922b4548a16571cbee93ab50-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/c28aec8a922b4548a16571cbee93ab50">Graphing Calculator</a> by Merritt H. Zhang and Sam Sanft
+      <p>
+        Accepts user input of a polynomial function and uses the marching squares algorithm to plot it in a 2D plane.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/c28aec8a922b4548a16571cbee93ab50">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/c28aec8a922b4548a16571cbee93ab50-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/c28aec8a922b4548a16571cbee93ab50">Marching Squares Graphing Calculator</a> by Samuel D. Sanft and Merritt Zhang
+      <p>
+        Our project is a graphing calculator that graphs two-variable functions in
+implicit form (F(x,y) = 0).
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/1BZ2qtevb2g">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/1BZ2qtevb2g/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/1BZ2qtevb2g">Gravity</a> by Alecia T. Barbieri and Abani Ahmed
+      <p>
+        Gravity is a study game where the user inputs terms and when their respective definitions to
+appear on falling rocks, and the user has to type in the correct term before the rock falls to the bottom, or else they will lose one of their three lives, an instance that causes you to lose the game when undergone thrice.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/dd3887f363b6409eb4b6cd5e872e937b?sharedAppSource=personal_library">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/dd3887f363b6409eb4b6cd5e872e937b?sharedAppSource=personal_library-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/dd3887f363b6409eb4b6cd5e872e937b?sharedAppSource=personal_library">Ivy Battle Simulator</a> by Ernie Moreno and Kaitlyn McCalebb
+      <p>
+        Ive Battle Simulator is a battle game with three Ivy League schools (Princeton, Harvard, Yale), where you get to decide which school you want to play as, battling a randomized computer.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/c8fb05365e5f4b78a793ac995495db62">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/c8fb05365e5f4b78a793ac995495db62-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/c8fb05365e5f4b78a793ac995495db62">TigerMaps</a> by Sokol Hoxha
+      <p>
+        My project allows people to see how many students are in Princeton University halls at a given day/time.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=X1ov7Je3lp4">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/X1ov7Je3lp4/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=X1ov7Je3lp4">COVID Destroyers</a> by Zain R. Ahmed and Chris Paige
+      <p>
+        Destroy COVID Virus (Circle) before you get hit.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=2ZZYFtSQoro">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/2ZZYFtSQoro/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=2ZZYFtSQoro">Othello</a> by Soseniyos T Yimer and Cristina Maldacena
+      <p>
+        Create and implement the rules of the board game Othello which 2 players can play on the terminal.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/5ee55857c29e4a4293a608e3cd4b1088?sharedAppSource=personal_library">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/5ee55857c29e4a4293a608e3cd4b1088?sharedAppSource=personal_library-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/5ee55857c29e4a4293a608e3cd4b1088?sharedAppSource=personal_library">CrossyCode</a> by Maia Weatherly and Jorge Hernandez
+      <p>
+        Players traverse through levels while trying to avoid collisions with enemies.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=KCiAJJTwB0A">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/KCiAJJTwB0A/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=KCiAJJTwB0A">Book Recommendation System Using Collaborative Filtering Algorithm</a> by Stephenie Chen and Sushma Miryala 
+      <p>
+        Our project uses machine learning, trained using a collaborative filtering algorithm on a public dataset of books & ratings  to recommend five books to the user based on 5 books they have indicated they enjoy.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=YJk7cFMEQ7A">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/YJk7cFMEQ7A/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=YJk7cFMEQ7A">Budget 538</a> by Daniel Shaw and Mori Ono
+      <p>
+        Predicting the U.S. Presidential Election using polling data and fundamentals.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.loom.com/share/da1bba9ea4404722acf27732b5578d3c">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/da1bba9ea4404722acf27732b5578d3c-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://www.loom.com/share/da1bba9ea4404722acf27732b5578d3c">BlackJack</a> by Lois I Omotara
+      <p>
+        I wrote code that would simulate a BlackJack Game in the console
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/IB3w16pu0GY">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/IB3w16pu0GY/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/IB3w16pu0GY">Jump!</a> by Alyssa L Ritchie
+      <p>
+        It is a simplified version of the google chrome no internet game, where the player jumps to avoid obstacles and the game ends once the player comes in contact with an obstacle
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://loom.com/share/7a1c1b7313da4e4e9e55feaa9db75af4">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/https://loom.com/share/7a1c1b7313da4e4e9e55feaa9db75af4-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://loom.com/share/7a1c1b7313da4e4e9e55feaa9db75af4">Blackjack</a> by Jiaying Fu and Cynthia Or
+      <p>
+        The purpose of our project is to let the user(s) experience entertainment through
+the form of the card game Blackjack.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=xbLUD0G0v_U">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/xbLUD0G0v_U/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=xbLUD0G0v_U">Freshman Simulator</a> by David O. Oke and Alexander Yoo
+      <p>
+        A text-based RPG that simulates the busy life of a first-year freshman student.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/oVlOthpFEpM">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/oVlOthpFEpM/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/oVlOthpFEpM">Restaurant Recommender</a> by Divraj Singh
+      <p>
+        recommend a restaurant in boston based off user input
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/XFRRL5v78-c">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/XFRRL5v78-c/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/XFRRL5v78-c">Personality Prediction</a> by Caroline Chen and Quincy Leung
+      <p>
+        Our project is a machine learning program that predicts the user’s personality type based on their input text.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+    <td>
+      <a href="https://drive.google.com/file/d/1qTMf4EmisLgAT2Mx6NwV6E24goDskLCR/view?usp=sharing">Sorting algorithm comparison</a> by Aetizaz Sameer
+      <p>
+        This project takes integers from an input file and times six different sorting algorithms -- merge sort, quick sort, insertion sort, bubble sort, selection sort, and bogo sort -- and compares their run times.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/zesWcKnnHow">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/zesWcKnnHow/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/zesWcKnnHow">Go, Java, Go!</a> by Xander Jenkin V and Matthew Barrett
+      <p>
+        Our project is a Java version of the Chinese board game Go, where two players place black and white stones around each other to capture the other player's stones and score points.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+    <td>
+      <a href="a">Cipherscript</a> by Sreeniketh A. Vogoti
+      <p>
+        Takes message string input and user-inputted complexity and produces image that encodes the message
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/jtsjpdbDpmA">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/jtsjpdbDpmA/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/jtsjpdbDpmA">Christmas Sim</a> by Ayo Ogunsanya and Pascal Nabare
+      <p>
+        Christmas tree art
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href=" https://www.loom.com/share/baf9b5e49f954cd89b9d9602559eab0b">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/ baf9b5e49f954cd89b9d9602559eab0b-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href=" https://www.loom.com/share/baf9b5e49f954cd89b9d9602559eab0b">Snake </a> by Nooha A. Kawsar and Aleha Amjad 
+      <p>
+        We implemented Snake in Java.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/H-fLxgnvVtU">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/H-fLxgnvVtU/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/H-fLxgnvVtU">ROCK, PAPER, SCISSORS, SHOOT!</a> by Windsor Nguyen and Liz Garcia
+      <p>
+        Recreates the classic game of rock, paper, scissors in Java.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/hS5Fu2Xr_eU">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/hS5Fu2Xr_eU/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/hS5Fu2Xr_eU">Rock Band</a> by Louis A. Larsen
+      <p>
+        My project is a DAW that allows users to create music using sounds 
+developed by the Karplus-Strong Algorithm.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://youtu.be/Y4D7KMQYFzo">
+    <img style="width: 356;" src="http://i1.ytimg.com/vi/Y4D7KMQYFzo/mqdefault.jpg">
+</a>
+
+    </td>
+    <td>
+      <a href="https://youtu.be/Y4D7KMQYFzo">Super Fighting Game 2000</a> by Seyi Oderinde
+      <p>
+        A text-based fighting game in the java terminal that allows the user to control a character as they face different opponents in different levels of the game and level up their character as they progress.
+      </p>
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://loom.com/share/dcbfa3942f544f92829509e521b732e2">
+    <img style="max-width:356px;" src="https://cdn.loom.com/sessions/thumbnails/https://loom.com/share/dcbfa3942f544f92829509e521b732e2-with-play.gif">
+  </a>
+    </td>
+    <td>
+      <a href="https://loom.com/share/dcbfa3942f544f92829509e521b732e2">Eartheart</a> by Alex M Eng
+      <p>
+        Eartheart is a text-based RPG in which players play as an animal and must try to survive in that animal's natural habitat, having to overcome both natural threats to their survival (like predation and disease) and man made obstacles (like buildings, pollution, and climate change).
+      </p>
+  </td>
+  </tr>
+</table>
+</body>
