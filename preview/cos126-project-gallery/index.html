@@ -9,6 +9,7 @@
     projects implemented for the Fall 2021 iteration of COS126. This gallery only includes the subset of projects for
     which the project members consented to having their project publically included in this gallery.
 </p>
+<form><input type="text" style="width: 356; margin-left: 10px;" name="search" value="" id="id_search" placeholder="Search" autofocus /></form>
 <table>
 
   <tr class="row">
@@ -2142,4 +2143,8 @@ developed by the Karplus-Strong Algorithm.
     </td>
   </tr>
 </table>
+
+<script type="text/javascript" src="http://perso.crans.org/besson/_static/jquery.js"></script>
+<script type="text/javascript" src="http://perso.crans.org/besson/_static/jquery.quicksearch.min.js"></script>
+<script type="text/javascript" defer async>$('input#id_search').quicksearch('table tbody tr');</script>
 </body>
