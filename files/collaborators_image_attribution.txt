@@ -1,4 +1,5 @@
 Attribution for flower images:
+- magnifying_glass.png: "Twemoji12 1f50e.svg" by Twitter is licensed under CC BY 4.0 (https://commons.wikimedia.org/wiki/File:Twemoji12_1f50e.svg)
 - larspur_wiki.jpg: "Larkspur Delphinium glaucum closeup" by Dcrjsr is licensed under CC BY 3.0 (https://commons.wikimedia.org/wiki/File:Larkspur_Delphinium_glaucum_closeup.jpg)
 - orange_tiger_lily_wiki.jpg: "" by Angelsharum is licensed under CC BY-SA 3.0 (https://commons.wikimedia.org/wiki/File:Orange_Tiger_Lily.jpg)
 - daisy_wiki.jpg: "Daisy (49234484218)" by Lawn Weeds is licensed under CC BY 2.0 (https://commons.wikimedia.org/wiki/File:Daisy_(49234484218).jpg)
