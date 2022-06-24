@@ -366,8 +366,7 @@
       </table>
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-
+    
       <tr bgcolor="#ffffd0" onmouseout="search_stop()" onmouseover="search_start()">
       <td width="25%">
         <!--<img src="./media/gdt.png" alt="hierarchical transformations" width="160" height="160">-->
@@ -404,6 +403,51 @@
         </p>
       </td>
     </tr>
+
+      <tr bgcolor="#ffffd0" onmouseout="artifacts_stop()" onmouseover="artifacts_start()">
+      <td width="25%">
+        <!--<img src="./media/gdt.png" alt="hierarchical transformations" width="160" height="160">-->
+        <div class="one">
+        <div class="two" id="artifacts_two" style="display:table-cell; vertical-align:middle; text-align:center;opacity:0;">
+          <img src="./media/artifacts_pose.png" alt="difference in avg pose between labelled female and male images"  width="160">
+        </div>
+        <img src="./media/artifacts_color.png" alt="difference in avg color between labelled female and male images"  width="160" id="artifacts_one">
+        </div>
+        <script type="text/javascript">
+        function artifacts_start() {
+        document.getElementById('artifacts_two').style.opacity = "1";
+        }
+        function artifacts_stop() {
+        document.getElementById('artifacts_two').style.opacity = "0";
+        }
+        search_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <a href="https://arxiv.org/pdf/2206.09191.pdf">
+          <papertitle>
+            Gender Artifacts in Visual Datasets
+          </papertitle>
+        </a>
+        <br>
+          <a href="https://nicolemeister.github.io/">Nicole Meister*</a>, 
+          <a href="https://dorazhao99.github.io/">Dora Zhao*</a>, 
+          <a href="https://angelina-wang.github.io/">Angelina Wang</a>, 
+          <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>, 
+          <strong>Ruth Fong</strong>, 
+          <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>
+        <br>
+        <em>arXiv</em>, 2022&nbsp; 
+        <br>
+        <a href="https://arxiv.org/abs/2206.09191">arXiv</a> | 
+        <a href="./bib/MeisterArXiv2022.bib">bibtex</a>
+        <p>
+          We demonstrate the pervasive-ness of gender artifacts in popular computer vision datasets (e.g. COCO and OpenImages). We find that all of the following (and more) are gender artifacts: the mean value of color channels (i.e. mean RGB), the pose and location of people, and most co-located objects. 
+        </p>
+      </td>
+    </tr>
+
+
 
     <tr bgcolor="#ffffd0"> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
       <!-- <tr bgcolor="#ffffd0">  -->
