@@ -50,9 +50,16 @@
      -moz-transition: opacity .2s ease-in-out;
      -webkit-transition: opacity .2s ease-in-out;
     }
+
+    /*
     span.highlight {
         background-color: #ffffd0;
     }
+
+    tr.highlight {
+      background-color: #ffffd0;
+    } */
+
     .people {
       margin: auto;
       text-align: center;
@@ -74,6 +81,7 @@
       height: 109px;
       object-fit: cover;
     }
+
   </style>
   <!--<link rel="icon" type="image/png" href="images/interactive_sim_2.png">-->
   <link rel="icon" type="image/png" href="media/color_headshot_favicon.png">
@@ -361,7 +369,10 @@
           <heading>Research &#129514</heading>
           <p>
           My research interests are in computer vision, machine learning, deep learning, and explainable AI.
-          I am interested in developing novel techniques for understanding AI models <i>post-hoc</i>, designing new deep learning archiectures that are <i>interpretable-by-design</i>, and introducing paradigms for <i>finding and correcting</i> existing failure points in AI models. Representative papers are <span class="highlight">highlighted</span>; see <a href="https://scholar.google.com/citations?user=39cUD3gAAAAJ">Google Scholar</a> for the most updated list of papers.
+          I am interested in developing novel techniques for understanding AI models <i>post-hoc</i>, designing new deep learning archiectures that are <i>interpretable-by-design</i>, and introducing paradigms for <i>finding and correcting</i> existing failure points in AI models. 
+          See <a href="https://scholar.google.com/citations?user=39cUD3gAAAAJ">Google Scholar</a> for the most updated list of papers.
+
+          <!-- Representative papers are <span class="highlight">highlighted</span>; see <a href="https://scholar.google.com/citations?user=39cUD3gAAAAJ">Google Scholar</a> for the most updated list of papers. -->
 
           <!--I am excited about Much of my current research is about explaining what deep neural networks are actually learning (i.e., where does an image classifier "look" in an image for evidence for its predicted class?, how are human-interpretable concepts encoded across CNN filters?, how do CNN representations compare to those learned by mammalian visual systems?). Representative papers are <span class="highlight">highlighted</span>.-->
           </p>
@@ -372,8 +383,64 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-    <tr bgcolor="#ffffd0"> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
-      <!-- <tr bgcolor="#ffffd0">  -->
+    <tr> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
+      <!-- <tr class="highlight">  -->
+      <td width="25%">
+        <img src="./media/fossil.png" alt="fossil image"  width="160" id="fossil_one">
+      </td>
+      <td valign="top" width="75%">
+        <a href="https://arxiv.org/pdf/2207.09615.pdf">
+          <papertitle>
+            Improving Fine-Grain Segmentation via Interpretable Modifications: A Case Study in Fossil Segmentation
+          </papertitle>
+        </a>
+        <br>
+          <a href="">Indu Panigrahi</a>, 
+          <a href="https://rmanzuk.mycpanel.princeton.edu/">Ryan Manzuk</a>, 
+          <a href="https://geosciences.princeton.edu/people/adam-c-maloof">Adam Maloof</a>, 
+          <strong>Ruth Fong</strong>
+        <br>
+        <em>arXiv</em>, 2022&nbsp; 
+        <br>
+        <a href="https://arxiv.org/abs/2210.03879">arXiv</a> | 
+        <a href="./bib/PanigrahiArXiv2022.bib">bibtex</a>
+        <p>
+          We explore how to improve a model for segmenting coral reef fossils by first understanding its systematic failures and second ``editing'' the model to mitigate said failures.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr class="highlight">
+      <td width="25%">
+        <img src='media/merlin_wren.png' width="160">
+      </td>
+      </td>
+      <td valign="top" width="75%">
+        <a href="https://arxiv.org/pdf/2210.03735.pdf" target="_blank">
+          <papertitle>"Help Me Help the AI": Understanding How Explainability Can Support Human-AI Interaction</papertitle>
+        </a>
+        <br>
+        <a href="https://sunniesuhyoung.github.io">Sunnie S. Y. Kim</a>,
+        <a href="http://www.ElizabethAnneWatkins.com">Elizabeth Anne Watkins</a>,
+        <a href="https://www.cs.princeton.edu/~olgarus/">Olga Russakovsky</a>,
+        <strong>Ruth Fong</strong>,
+        <a href="https://www.andresmh.com/">Andr&eacute;s Monroy-Hern&aacute;ndez</a>
+        <br>
+        <em>arXiv, 2022</em>
+        <br>
+        <a href="https://arxiv.org/abs/2210.03735">arXiv</a> |
+        <a href="bib/KimArXiv2022.bib">bibtex</a>
+        <p></p>
+        <p>
+          We explore how explainability can support human-AI interaction by interviewing 20 end-users of a real-world AI application. 
+          Specifically, we study (1) what XAI needs people have, (2) how people intend to use XAI explanations, and (3) how people perceive existing XAI methods.
+        <p>
+      </td>
+    </tr>
+
+    <tr class="highlight"> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
+      <!-- <tr class="highlight">  -->
       <td width="25%">
         <img src="./media/overlooked_factors.png" alt="ELUDE image"  width="160" id="elude_one">
       </td>
@@ -400,7 +467,7 @@
     </tr>
 
 
-      <tr bgcolor="#ffffd0" onmouseout="search_stop()" onmouseover="search_start()">
+      <tr class="highlight" onmouseout="search_stop()" onmouseover="search_start()">
       <td width="25%">
         <!--<img src="./media/gdt.png" alt="hierarchical transformations" width="160" height="160">-->
         <div class="one">
@@ -437,7 +504,7 @@
       </td>
     </tr>
 
-      <tr bgcolor="#ffffd0" onmouseout="artifacts_stop()" onmouseover="artifacts_start()">
+      <tr class="highlight" onmouseout="artifacts_stop()" onmouseover="artifacts_start()">
       <td width="25%">
         <!--<img src="./media/gdt.png" alt="hierarchical transformations" width="160" height="160">-->
         <div class="one">
@@ -473,6 +540,7 @@
         <em>arXiv</em>, 2022&nbsp; 
         <br>
         <a href="https://arxiv.org/abs/2206.09191">arXiv</a> | 
+        <a href="https://princetonvisualai.github.io/gender-artifacts/">project page</a> | 
         <a href="./bib/MeisterArXiv2022.bib">bibtex</a>
         <p>
           We demonstrate the pervasive-ness of gender artifacts in popular computer vision datasets (e.g. COCO and OpenImages). We find that all of the following (and more) are gender artifacts: the mean value of color channels (i.e. mean RGB), the pose and location of people, and most co-located objects. 
@@ -482,8 +550,8 @@
 
 
 
-    <tr bgcolor="#ffffd0"> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
-      <!-- <tr bgcolor="#ffffd0">  -->
+    <tr class="highlight"> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
+      <!-- <tr class="highlight">  -->
       <td width="25%">
         <img src="./media/ELUDE2022_simple.png" alt="ELUDE image"  width="160" id="elude_one">
       </td>
@@ -508,7 +576,7 @@
       </td>
     </tr>
 
-    <tr bgcolor="#ffffd0"> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
+    <tr class="highlight"> <!--onmouseout="sim_stop()" onmouseover="sim_start()"> -->
       <td width="25%">
         <!--<img src="./media/gdt.png" alt="hierarchical transformations" width="160" height="160">-->
         <!--<div class="one">
@@ -554,7 +622,7 @@
       </td>
     </tr>
 
-    <tr bgcolor="#ffffd0" onmouseout="sim_stop()" onmouseover="sim_start()">
+    <tr class="highlight" onmouseout="sim_stop()" onmouseover="sim_start()">
       <td width="25%">
         <!--<img src="./media/gdt.png" alt="hierarchical transformations" width="160" height="160">-->
         <div class="one">
@@ -636,7 +704,7 @@
     </tr>
 
 
-    <tr bgcolor="#ffffd0" onmouseout="describability_stop()" onmouseover="describability_start()">
+    <tr class="highlight" onmouseout="describability_stop()" onmouseover="describability_start()">
       <td width="25%">
         <!--<img src="./media/describability_1.png" alt="describability metric diagram"  width="160">-->
         <div class="one">
@@ -865,7 +933,7 @@ year = {2020}
     </tr>
 
 
-    <tr onmouseout="tripod_stop()" onmouseover="tripod_start()" bgcolor="#ffffd0">
+    <tr onmouseout="tripod_stop()" onmouseover="tripod_start()" class="highlight">
       <td width="25%">
         <div class="one">
         <div class="two" id="tripod_image"><img src="media/tripod_2.png" width="160" height="160" alt="tripod"></div>
@@ -952,7 +1020,7 @@ year = {2019}
         <p>We introduce a simple paradigm based on batch augmentation for leveraging input-level occlusions (both stochastic and saliency-based) to improve ImageNet image classification. We also demonstrate the necessary of batch augmentation and quantify the robustness of different CNN architectures to occlusion via ablation studies.</p>
       </td>
     </tr>
-    <tr onmouseout="filters_stop()" onmouseover="filters_start()" bgcolor="#ffffd0">
+    <tr onmouseout="filters_stop()" onmouseover="filters_start()" class="highlight">
       <td width="25%">
         <div class="one">
         <div class="two" id="filter_image"><img src="media/filters_2.png" width="160" height="160" alt="filters"></div>
@@ -1001,7 +1069,7 @@ year = {2019}
       </td>
     </tr>
 
-    <tr onmouseout="classifier_stop()" onmouseover="classifier_start()"><!-- bgcolor="#ffffd0">-->
+    <tr onmouseout="classifier_stop()" onmouseover="classifier_start()"><!-- class="highlight">-->
       <td width="25%">
         <div class="one">
         <div class="two" id = 'classifier_image'><img src='media/classifier_2.png' width="160" height="130"></div>
@@ -1034,7 +1102,7 @@ year = {2019}
       </td>
     </tr>
 
-    <tr onmouseout="flute_stop()" onmouseover="flute_start()" bgcolor="#ffffd0">
+    <tr onmouseout="flute_stop()" onmouseover="flute_start()" class="highlight">
       <td width="25%">
         <div class="one">
         <div class="two" id = 'flute_image_2'><img src='media/flute_2.png' alt="flute" height="150" width="160"></div>
@@ -1361,7 +1429,7 @@ year = {2019}
           <font size="2">
           <a href="https://jonbarron.info/">This ubiquitous CS researcher website template spawned from here.</a>
           <br>
-          Last updated: September 2022
+          Last updated: November 2022
         </font>
         </p>
         </td>
