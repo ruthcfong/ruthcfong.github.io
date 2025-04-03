@@ -9,4 +9,4 @@ Attribution for flower images:
 - white_iris_wiki.jpg: "Iris ensata Thunb" by Laitche is licensed under CC BY-SA 3.0 (https://commons.wikimedia.org/wiki/File:Iris_ensata_Thunb.jpg)
 - light_purple_iris_wiki.jpg: "Iris douglasiana flower 2003-03-17" by Curtis Clark (assumed) is licensed under CC BY-SA 2.5 (https://commons.wikimedia.org/wiki/File:Iris_douglasiana_flower_2003-03-17.jpg)
 
-All other images of lab and associate members are used with permission.
+All other images of lab members and collaborators are used with permission.
