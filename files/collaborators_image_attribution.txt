@@ -9,4 +9,11 @@ Attribution for flower images:
 - white_iris_wiki.jpg: "Iris ensata Thunb" by Laitche is licensed under CC BY-SA 3.0 (https://commons.wikimedia.org/wiki/File:Iris_ensata_Thunb.jpg)
 - light_purple_iris_wiki.jpg: "Iris douglasiana flower 2003-03-17" by Curtis Clark (assumed) is licensed under CC BY-SA 2.5 (https://commons.wikimedia.org/wiki/File:Iris_douglasiana_flower_2003-03-17.jpg)
 
+Attribution for headshot images taken from collaborators' personal websites:
+- romina_mahinpei.png: from Romina Mahinpei's website (https://rmahinpei.github.io/)
+- victoria_dean.jpg: from Victoria Dean's website (https://vdean.github.io/); photo by Leise Jones Photography (per image metadata)
+- maryam_hedayati_crop.jpg: cropped from a photo on Maryam Hedayati's website (https://maryamhed.github.io/); copyright Eileen Molony (per image metadata)
+- manoel_horta_ribeiro.png: from Manoel Horta Ribeiro's website (https://manoelhortaribeiro.github.io/)
+- lydia_liu.jpg: from Lydia T. Liu's website (https://www.lydiatliu.com/); photo credit: David Kelly Crow
+
 All other images of lab members and collaborators are used with permission.
